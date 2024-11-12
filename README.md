@@ -2,19 +2,19 @@
 
 **Goal:** Create a responsive Beauty website using the provided Figma mockup.
 
-## Instructions
+## Instructions ☑️
 
 1. Clone the repository to your local machine.
 2. The team leader should create the GitHub project and invite their other members. Make sure to link the repository to the project.
 3. Using the provided Figma mockup, recreate this design using HTML, CSS, and JavaScript: [https://www.figma.com/design/hdmA1VIakgC2Yxt0xDDIyY/BC-Beauty---WMAD%2BUI%2FUXDesign?node-id=4106-556&t=NlOw72RJgvIYu6Cb-1]
 4. Make sure to create and assign tasks to each member on the GitHub Project. Discuss and agree on a plan on how you will work together.
-5. Watch and compile your SCSS files by running `sass -w scss/:css/`.
+5. Watch and compile your SCSS files by running `sass -w scss/:css/`
 
-## Reminders
+## Reminders 🔔
 
 - Create your branches. Do not work on the `main` branch.
 
-## Page Notes
+## Notes 📝
 
 ### Home
 
@@ -26,7 +26,7 @@
 
 - **MY WORK**: You can switch between `Makeup` and `Hairstyle` by clicking on their tab names. You can use any effect you like (fade, slide, etc.). Clicking on the `View More` button doesn't do anything.
 
-## Presentation
+## Presentation 📽️
 
 Presentation will be on next Monday. Make sure you create a pull request to `main` once everything is done.
 
