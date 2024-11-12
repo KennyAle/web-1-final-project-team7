@@ -8,6 +8,7 @@
 2. The team leader should create the GitHub project and invite their other members. Make sure to link the repository to the project.
 3. Using the provided Figma mockup, recreate this design using HTML, CSS, and JavaScript: [https://www.figma.com/design/hdmA1VIakgC2Yxt0xDDIyY/BC-Beauty---WMAD%2BUI%2FUXDesign?node-id=4106-556&t=NlOw72RJgvIYu6Cb-1]
 4. Make sure to create and assign tasks to each member on the GitHub Project. Discuss and agree on a plan on how you will work together.
+5. Watch and compile your SCSS files by running `sass -w scss/:css/`.
 
 ## Reminders
 
