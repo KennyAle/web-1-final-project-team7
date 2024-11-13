@@ -24,6 +24,32 @@ a {
     text-decoration: none;
 }
 
+ul {
+    list-style-type: none;
+}
+
+// HEADER   
+nav {
+    font-family: "Baskervville", serif;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 80px;
+    padding: 32px 40px;
+    background-color: var(--pale-white);
+}
+
+nav .menu-left, nav .menu-right {
+    width: 100%;
+}
+
+nav div ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
 body {
     font-family: "Montserrat", serif;
     font-size: 18px;
