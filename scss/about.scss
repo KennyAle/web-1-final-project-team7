@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --brand-color: #191919;
+    --bold-main-color: #725A58;
+    --accent-color: #E3B6B1;
+    --light-pink: #FAE9E7;
+    --pale-white: #F8F6F4;
+    --paper-white: #FBFAFA;
+    --mid-grey: #A3A3A3;
+    --dark-grey: #535353;
+    --black: #191919;
+    --dark-pink: #B99692;
+    --brown: #A06D67;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Montserrat", serif;
+    font-size: 18px;
+}
+
+.title {
+    font-family: "Baskervville", serif;
+    color: var(--bold-main-color);
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 104px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.subtitle {
+    font-family: "Baskervville", serif;
+    color: var(--bold-main-color);
+    font-weight: 400;
+    line-height: 40px;
+    font-size: 40px;
+}
+
+.p-body {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--brand-color);
+}
+
+.top {
+    max-width: 1440px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+    padding: 0 0 24px 0;
+}
+
+.top h3 {
+    font-size: 48px;
+    line-height: 62.4px;
+    color: var(--accent-color);
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: var(--light-pink);
+    padding: 80px 0;
+}
+
+.service-card {
+    display: flex;
+    align-items: center;
+    max-width: 1024px;
+    width: 90%;
+    gap: 40px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.service-card .frame {
+    position: relative;
+    height: 380px;
+}
+
+.service-card .frame::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: calc(100% - 40px);
+    height: 340px;
+    border: 0.8px solid var(--paper-white);
+}
+
+.service-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+}
+
+.service-content h2:first-of-type {
+    font-size: 48px;
+    line-height: 62.4px;
+}
+
+
+.service-content a {
+    max-width: 171px;
+    padding: 20px 32px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--black);
+    line-height: 18px;
+    border: 0.8px solid var(--brand-color);
+}
+
+.brands{
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+    padding: 44px 0;
+}
+
+.brands h2 {
+    text-align: center;
+}
+
+.our-brands {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 44px;
+    margin: auto;
+    width: 75%;
+}
+
+
+/* Smartphone */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+        line-height: 25.6px;
+    }
+    .top {
+        gap: 24px;
+        padding: 40px 16px;
+    }
+    .title {
+        font-size: 40px;
+        line-height: 48px;
+    }
+    .subtitle {
+        line-height: 31.2px;
+    }
+    .service-card {
+        flex-direction: column;
+    }
+    .services {
+        padding: 0 0 40px 0;
+        gap: 24px;
+    }
+    .service-content {
+        padding: 1em;
+    }
+    .service-desc {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .service-card {
+        padding: 0;
+        width: 100%;
+    }
+    .service-content a {
+        max-width: 100%;
+    }
+} 
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+}
