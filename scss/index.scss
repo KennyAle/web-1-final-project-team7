@@ -1,0 +1,81 @@
+body {
+  position: relative;
+  font-family: "Baskervville", serif;
+}
+
+.p {
+  font-family: "Montserrat";
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center; /* 水平方向に中央寄せ */
+  align-items: center; /* 垂直方向に中央寄せ */
+}
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+img {
+  display: block;
+}
+
+#rectangle {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 100%;
+  height: 80%;
+  background-color: transparent;
+  border: 1px solid #e3b6b1;
+  z-index: -1000;
+}
+#top_information {
+  width: 50%;
+  padding-left: 50px;
+}
+
+.button-image-container {
+  display: flex;
+  align-items: center;
+  button {
+    margin-right: 10px; /* ボタンと画像の間にスペースを追加 */
+    border: 1px solid #725a51; /* ボタンを枠で囲む */
+    padding: 24px 32px; /* ボタンの内側に余白を追加 */
+    background-color: transparent; /* ボタンの背景色を透明に */
+    color: #725a51; /* ボタンのテキスト色を設定 */
+    cursor: pointer; /* ホバー時にポインターを表示 */
+  }
+  img {
+    margin-left: 40px; /* 画像を右に寄せるために左マージンを追加 */
+  }
+}
+.line-with-text {
+  position: relative;
+  text-align: center;
+  border-bottom: 1px solid black;
+  margin: 20px 100px;
+}
+
+.line-text {
+  position: relative;
+  display: inline-block;
+  background: white;
+  padding: 0 10px;
+  top: 0.5em;
+}
+
+#logos {
+  display: flex;
+  flex-wrap: wrap; /* 要素を折り返す */
+  justify-content: space-between; /* 要素間のスペースを均等にする */
+  margin: 0 250px; /* 左右のマージンを広く設定 */
+}
+
+.logo {
+  width: 23%; /* 4つ並べるために幅を調整 */
+  margin-bottom: 20px; /* 下部にマージンを追加して段を分ける */
+  fill: #a3a3a3;
+}
