@@ -61,7 +61,7 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 32px;
-    padding: 0 0 24px 0;
+    padding: 40px 16px;
 }
 
 .top h3 {
@@ -88,19 +88,20 @@ body {
     padding: 40px 0;
 }
 
-.service-card .frame {
+.frame {
+    width: auto;
     position: relative;
-    height: 380px;
 }
 
-.service-card .frame::after {
+.frame::after {
     content: '';
     position: absolute;
-    top: 20px;
-    left: 20px;
-    width: calc(100% - 40px);
-    height: 340px;
-    border: 0.8px solid var(--paper-white);
+    width: calc(100% - 42px);
+    height: calc(100% - 44px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 0.86px solid var(--paper-white);
 }
 
 .service-content {
@@ -114,7 +115,6 @@ body {
     font-size: 48px;
     line-height: 62.4px;
 }
-
 
 .service-content a {
     max-width: 171px;
@@ -144,6 +144,7 @@ body {
     gap: 44px;
     margin: auto;
     width: 75%;
+    opacity: 60%;
 }
 
 
@@ -154,12 +155,16 @@ body {
         line-height: 25.6px;
     }
     .top {
-        gap: 24px;
+        gap: 16px;
         padding: 40px 16px;
     }
+    .top h3 {
+        font-size: 36px;
+        line-height: 43.2px;
+    }
     .title {
-        font-size: 40px;
-        line-height: 48px;
+        font-size: 33px;
+        line-height: 33px;
     }
     .subtitle {
         line-height: 31.2px;
@@ -174,10 +179,8 @@ body {
     .service-content {
         padding: 1em;
     }
-    .service-desc {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
+    .service-content br {
+        display: none;
     }
     .service-card {
         padding: 0;
@@ -185,6 +188,20 @@ body {
     }
     .service-content a {
         max-width: 100%;
+    }
+    .brands {
+        gap: 24px;
+        padding: 40px 0;
+    }
+    .our-brands {
+        grid-template-columns: 1fr 1fr;
+        gap: 44px;
+    }
+    .service-card .frame {
+        width: 100%;
+    }
+    .service-card .frame img {
+        width: 100%;
     }
 } 
 /* Tablet */
