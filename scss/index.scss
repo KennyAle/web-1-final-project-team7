@@ -7,19 +7,25 @@ body {
   font-family: "Montserrat";
 }
 
+button {
+  font-family: "Baskervville", serif;
+  margin-right: 10px;
+  border: 1px solid #5e4a49;
+  padding: 24px 32px;
+  background-color: transparent;
+  color: #5e4a49;
+  cursor: pointer;
+  font-size: 20px;
+}
 .container {
   display: flex;
   align-items: flex-start;
-  justify-content: center; /* 水平方向に中央寄せ */
-  align-items: center; /* 垂直方向に中央寄せ */
+  justify-content: center;
+  align-items: center;
 }
 .image-container {
   position: relative;
   display: inline-block;
-}
-
-img {
-  display: block;
 }
 
 #rectangle {
@@ -41,15 +47,15 @@ img {
   display: flex;
   align-items: center;
   button {
-    margin-right: 10px; /* ボタンと画像の間にスペースを追加 */
-    border: 1px solid #725a51; /* ボタンを枠で囲む */
-    padding: 24px 32px; /* ボタンの内側に余白を追加 */
-    background-color: transparent; /* ボタンの背景色を透明に */
-    color: #725a51; /* ボタンのテキスト色を設定 */
-    cursor: pointer; /* ホバー時にポインターを表示 */
+    margin-right: 10px;
+    border: 1px solid #725a51;
+    padding: 24px 32px;
+    background-color: transparent;
+    color: #725a51;
+    cursor: pointer;
   }
   img {
-    margin-left: 40px; /* 画像を右に寄せるために左マージンを追加 */
+    margin-left: 40px;
   }
 }
 .line-with-text {
@@ -69,13 +75,84 @@ img {
 
 #logos {
   display: flex;
-  flex-wrap: wrap; /* 要素を折り返す */
-  justify-content: space-between; /* 要素間のスペースを均等にする */
-  margin: 0 250px; /* 左右のマージンを広く設定 */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 250px;
 }
 
 .logo {
-  width: 23%; /* 4つ並べるために幅を調整 */
-  margin-bottom: 20px; /* 下部にマージンを追加して段を分ける */
+  width: 23%;
+  margin-bottom: 20px;
   fill: #a3a3a3;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  h1 {
+    font-size: 80px;
+    text-transform: uppercase;
+  }
+  p {
+    margin: 30px 200px;
+  }
+}
+
+.works {
+  background-color: #fae9e7;
+  text-align: center;
+
+  #works {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #works img {
+    margin: 10px;
+    height: 350px;
+  }
+
+  #QuotationMark img {
+    margin: 30px 0px;
+  }
+
+  #testimonials-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    flex-flow: column;
+  }
+
+  #testimonials {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    transition: transform 0.5s ease;
+  }
+
+  .testimonial {
+    flex: 0 0 100%;
+    margin-right: 20px;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .arrow {
+    background: none;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    z-index: 1;
+  }
+}
+
+.makeup101 {
+  background-color: #fae9e7;
 }
