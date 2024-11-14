@@ -1,0 +1,72 @@
+@media screen and (max-width: 900px) {
+    footer {
+        nav {
+            ul {
+                display: grid;
+                grid-template-rows: repeat(4, auto);
+                grid-auto-flow: column;
+                text-align: center;
+                gap: 26px;
+                min-height: 180px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .message {
+        display: none;
+    }
+
+    .portfolio_container {
+        .photo_container {
+            grid-template-columns: repeat(2, minmax(288px, 1fr)) !important;
+            grid-template-rows: repeat(2, minmax(auto, 1fr)) !important;
+
+            :nth-child(n+7) {
+                display: none !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:620px) {
+    .portfolio_container {
+        .photo_container {
+            grid-template-columns: repeat(auto-fit, minmax(288px, 1fr)) !important;
+            grid-template-rows: repeat(2, minmax(auto, 1fr)) !important;
+
+            :nth-child(n+5) {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .message {
+        display: none;
+    }
+
+    .heading {
+
+        h1 {
+            font-size: 40px !important;
+            margin: 0 auto !important;
+            width: 100% !important;
+        }
+
+        p {
+            font-size: 16px !important;
+        }
+    }
+    .portfolio_container {
+        .photo_container {
+            grid-template-columns: repeat(1, 288px) !important;
+            :nth-child(n+5) {
+                display: none !important;
+            }
+        }
+    }
+}
+

@@ -17,3 +17,12 @@ hairstyle.addEventListener("click", () => {
         element.classList.remove("back")
     })
 })
+
+const currentPage = window.location.pathname
+const allPages = document.querySelectorAll("nav a")
+
+allPages.forEach((page) => {
+    if (page.getAttribute("href") === currentPage) {
+        page.classList.add("underline")
+    }
+})

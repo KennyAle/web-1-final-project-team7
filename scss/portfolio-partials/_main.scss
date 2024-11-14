@@ -1,16 +1,26 @@
 main {
     width: 100%;
 
+    .message {
+        position: relative;
+        a {
+            position: fixed;
+            right: 0;
+            top: 10vw;
+        }
+    }
+
     .heading {
         text-align: center;
 
         h1 {
-            margin: 0;
+            margin: 0 auto;
             font-size: 80px;
             color: #725a58;
             letter-spacing: 13px;
             font-family: "Baskervville", serif;
             font-weight: 400;
+            width: 100%;
         }
 
         .line {
@@ -23,11 +33,14 @@ main {
         }
 
         p {
-            width: 585px;
-            height: 54px;   
+            width: 40.63vw;
+            min-width: 328px;
+            height: 3.75vw;   
+            min-height: 78px;
             margin: 10px auto;
             color: #191919;
             font-family: "Montserrat", sans-serif;
+            font-size: 1rem;
         }
     }
 
@@ -49,13 +62,14 @@ main {
                 border-right: none;
                 border-bottom: 1px solid black;
                 cursor: pointer;
-                font-size: 32px;
+                font-size: max(2.22vw, 24px);
                 font-family: "Baskervville", serif;
-                width: 242px;
-                height: 53px;
-                padding-left: 60px;
-                padding-right: 60px;
+                width: 16.81vw;
+                min-width: 140px;
+                height: 3.68vw;
+                min-height: 48px;
                 padding-bottom: 10px;
+                text-align: center;
             }
 
             .gray {
@@ -67,12 +81,11 @@ main {
 
         .photo_container {
             display: grid;
-            grid-template-columns: repeat(3, 335px);
-            grid-template-rows: repeat(3, 347px);
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
             gap: 1vw;
             place-content: center;
-            padding: 0;
-            margin: 0;
+            margin: 0 10vw;
 
             .makeup_container {
                 position: relative;
@@ -87,8 +100,9 @@ main {
                 .minilogo {
                     position: absolute;
                     bottom: 0;
-                    right: 0;
+                    right: -5px;
                     z-index: 999;
+                    width: 7.36vw;
                 }
 
                 .hairstyle_image {

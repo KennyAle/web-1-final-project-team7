@@ -4,7 +4,12 @@ footer {
 
     .footer_heading {
         text-align: center;
-        
+
+        .footer_logo {
+            width: 8.77vw;
+            min-width: 126px;
+
+        }
         p {
             font-family: "Montserrat", sans-serif;
             font-size: 14px;
@@ -14,6 +19,7 @@ footer {
         }
 
         .icons {
+            margin-bottom: 3vw;
 
             img:nth-child(2) {
                 margin-left: 24px;
@@ -23,26 +29,36 @@ footer {
     }
 
     nav {
-        
+        width: 84.31vw;
+        min-width: 288px;
+        border-top: 0.5px solid #191919;
+        border-bottom: 0.5px solid #191919;
+        margin: 0 auto;
+
         ul {
             display: flex;
-            justify-content: space-around;
-            border-top: 0.5px solid #191919;
-            border-bottom: 0.5px solid #191919;
-            padding-top: 26px;
-            padding-bottom: 26px;
-            margin-right: 113px;
-            margin-left: 113px;
+            justify-content: space-between;
+            margin-top: 26px;
+            margin-bottom: 26px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0;
+            padding-left: 7.71vw;
+            padding-right: 7.71vw;
 
             li {
-                list-style: none;
-
+                list-style: none;   
                 
                 a {
                     text-decoration: none;
                     font-family: "Baskervville", serif;
                     color: #725a58;
                     font-size: 20px;
+                    white-space: nowrap;
+
+                    &.underline {
+                        border-bottom: 1px solid #725a58;
+                    }
                 }
             }
         }
