@@ -1,6 +1,6 @@
-@import "partials/header";
-@import "partials/main";
-@import "partials/footer";
+@import "portfolio-partials/header";
+@import "portfolio-partials/main";
+@import "portfolio-partials/footer";
 
 * {
     box-sizing: border-box;
@@ -8,4 +8,5 @@
 
 body {
     margin: 0;
+    background-color: #f8f6f4;
 }
