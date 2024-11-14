@@ -25,7 +25,6 @@ button {
 }
 .image-container {
   position: relative;
-  display: inline-block;
 }
 
 #rectangle {
@@ -92,18 +91,29 @@ button {
   justify-content: center;
   align-items: center;
   font-size: 18px;
+  text-align: center;
+
   h1 {
     font-size: 80px;
+    font-weight: 100;
     text-transform: uppercase;
+    margin-bottom: 2rem;
+    color: #5e4a49;
+  }
+  hr {
+    border: none;
+    width: 20%;
+    border-top: 1px solid #e3b6b1;
+    margin: 20px 0;
   }
   p {
     margin: 30px 200px;
+    width: 437px;
   }
 }
 
 .works {
   background-color: #fae9e7;
-  text-align: center;
 
   #works {
     display: flex;
@@ -151,6 +161,48 @@ button {
     cursor: pointer;
     z-index: 1;
   }
+}
+
+.styles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 100px;
+}
+
+.image-container {
+  position: relative;
+  width: fit-content; /* 必要に応じて調整 */
+  max-width: 100%; /* 必要に応じて調整 */
+  // display: inline-block;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.overlay-text {
+  position: absolute;
+  top: 70%;
+  left: -15%;
+  color: #fae9e7;
+  font-size: 4rem;
+}
+.first-letter {
+  color: #b99692;
+}
+
+#rectangle2 {
+  position: absolute;
+  top: -5%;
+  left: 5%;
+  width: 100%;
+  max-width: 387px;
+  height: 100%;
+  background-color: transparent;
+  border: 1px solid #e3b6b1;
+  z-index: -1000;
 }
 
 .makeup101 {
