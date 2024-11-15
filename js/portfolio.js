@@ -18,11 +18,18 @@ hairstyle.addEventListener("click", () => {
     })
 })
 
-const currentPage = window.location.pathname
-const allPages = document.querySelectorAll(".footer_link")
+const messageBtns = document.getElementById("message_btns")
+const messageBoxBtn = document.getElementById("message_box_btn")
+const closeMessageBox = document.getElementById("close_message_box")
 
-allPages.forEach((page) => {
-    if (page.getAttribute("href") === currentPage) {
-        page.classList.add("underline")
-    }
+messageBoxBtn.addEventListener("click", () => {
+    messageBtns.classList.add("appear")
+    messageBoxBtn.classList.add("disappear")
 })
+
+closeMessageBox.addEventListener("click", () => {
+    console.log("Close button clicked")
+    messageBtns.classList.remove("appear")
+    messageBoxBtn.classList.remove("disappear")
+})
+

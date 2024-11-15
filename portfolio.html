@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="./css/portfolio-style.css">
-    <link rel="stylesheet" href="./css/footer-style.css">
+    <link rel="stylesheet" href="./css/portfolio.css">
+    <link rel="stylesheet" href="./css/footer.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -90,7 +90,15 @@
      <!---------------------------- HEADER END ---------------------------->
     <main class="margin-navbar">
         <div class="message">
-            <a href="#"><img src="./img/portfolio/message-icon.svg" alt="message icon"></a>
+            <div class="message_btns" id="message_btns">
+                <a href="#"><img src="./img/portfolio/message-box-instagram.svg" alt="instagram icon"></a>
+                <a href="#"><img src="./img/portfolio/message-box-call.svg" alt="call icon"></a>
+                <a href="#"><img src="./img/portfolio/message-box-whatsapp.svg" alt="whatsapp icon"></a>
+                <img src="./img/portfolio/message-box-close.svg" alt="close icon" class="close_message_box" id="close_message_box">
+            </div>
+            <div class="message_box_btn" id="message_box_btn">
+                <img src="./img/portfolio/message-icon.svg" alt="message icon" class="open">
+            </div>
         </div>
         <div class="heading">
             <h1>MY WORK</h1>
@@ -181,5 +189,6 @@
     </footer>
 
     <script src="./js/portfolio.js"></script>
+    <script src="./js/footer.js"></script>
 </body>
 </html>

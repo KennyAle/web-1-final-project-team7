@@ -3,10 +3,46 @@ main {
 
     .message {
         position: relative;
-        a {
+
+        .message_btns {
+            display: grid;
+            justify-content: flex-end;
             position: fixed;
+            bottom: 50vh;
             right: 0;
-            top: 10vw;
+            opacity: 0;
+
+            &.appear {
+                opacity: 1;
+            }
+
+            .close_message_box {
+                cursor: pointer;
+                z-index: 100;
+            }
+            
+            a {
+                display: inline-block;
+                
+                img {
+                    display: block;
+                }
+            }
+        }
+
+        .message_box_btn {
+            position: relative;
+
+            .open {
+                cursor: pointer;
+                position: fixed;
+                bottom: 50vh;
+                right: 0;
+            }
+
+            &.disappear {
+                opacity: 0;
+            }
         }
     }
 
