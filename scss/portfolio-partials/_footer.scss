@@ -8,7 +8,6 @@ footer {
         .footer_logo {
             width: 8.77vw;
             min-width: 126px;
-
         }
         p {
             font-family: "Montserrat", sans-serif;
@@ -21,7 +20,7 @@ footer {
         .icons {
             margin-bottom: 3vw;
 
-            img:nth-child(2) {
+            a:nth-child(2) {
                 margin-left: 24px;
                 margin-right: 24px;
             }
@@ -57,7 +56,8 @@ footer {
                     white-space: nowrap;
 
                     &.underline {
-                        border-bottom: 1px solid #725a58;
+                        text-decoration: underline #725a58 1px;
+                        text-underline-offset: 2.5px;
                     }
                 }
             }

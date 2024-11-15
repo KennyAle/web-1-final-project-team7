@@ -19,7 +19,7 @@ hairstyle.addEventListener("click", () => {
 })
 
 const currentPage = window.location.pathname
-const allPages = document.querySelectorAll("nav a")
+const allPages = document.querySelectorAll(".footer_link")
 
 allPages.forEach((page) => {
     if (page.getAttribute("href") === currentPage) {
