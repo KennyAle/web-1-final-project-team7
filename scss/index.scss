@@ -272,6 +272,7 @@ form * {
 }
 
 form {
+  font-family: "Baskervville", serif;
   margin: auto;
   max-width: 60%;
   background-color: #fae9e7;
@@ -288,6 +289,7 @@ form h2 {
 }
 
 .formTitle {
+  font-family: "Baskervville", serif;
   font-weight: normal;
   font-size: 25px;
 }
@@ -345,6 +347,12 @@ form fieldset {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.eventType input[type="radio"]:checked ~ label {
+  background-color: red;
+  color: white;
+  border-color: #e3b6b1;
 }
 
 .notDecided {
