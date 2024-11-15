@@ -203,6 +203,7 @@ body {
     flex-direction: column;
     gap: 32px;
     padding: 40px 16px;
+    background-color: var(--pale-white);
 }
 
 .top h3 {
@@ -227,22 +228,6 @@ body {
     gap: 40px;
     margin: auto;
     padding: 40px 0;
-}
-
-.frame {
-    width: auto;
-    position: relative;
-}
-
-.frame::after {
-    content: '';
-    position: absolute;
-    width: calc(100% - 42px);
-    height: calc(100% - 44px);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 0.86px solid var(--paper-white);
 }
 
 .service-content {
@@ -281,11 +266,17 @@ body {
 
 .our-brands {
     display: grid;
+    justify-items: center;
+    align-items: center;
     grid-template-columns: repeat(4, 1fr);
     gap: 44px;
     margin: auto;
     width: 75%;
     opacity: 60%;
+}
+
+.our-brands img {
+    width: 90px;
 }
 
 
@@ -412,11 +403,7 @@ body {
         gap: 44px;
     }
 
-    .service-card .frame {
-        width: 100%;
-    }
-
-    .service-card .frame img {
+    .service-card img {
         width: 100%;
     }
 }
