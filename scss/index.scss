@@ -19,6 +19,7 @@ button {
   cursor: pointer;
   font-size: 20px;
 }
+
 .container {
   font-family: "Baskervville", serif;
   display: flex;
@@ -26,6 +27,7 @@ button {
   justify-content: center;
   align-items: center;
 }
+
 .image-container {
   position: relative;
 }
@@ -40,6 +42,7 @@ button {
   border: 1px solid #e3b6b1;
   z-index: -1000;
 }
+
 #top_information {
   width: 50%;
   padding-left: 50px;
@@ -48,6 +51,7 @@ button {
 .button-image-container {
   display: flex;
   align-items: center;
+
   button {
     margin-right: 10px;
     border: 1px solid #725a51;
@@ -56,10 +60,12 @@ button {
     color: #725a51;
     cursor: pointer;
   }
+
   img {
     margin-left: 40px;
   }
 }
+
 .line-with-text {
   position: relative;
   text-align: center;
@@ -115,6 +121,7 @@ button {
     border-top: 1px solid #e3b6b1;
     margin: 20px 0;
   }
+
   p {
     margin: 30px 200px;
     width: 437px;
@@ -190,6 +197,7 @@ button {
   height: auto;
   display: block;
 }
+
 .overlay-text {
   position: absolute;
   top: 70%;
@@ -197,6 +205,7 @@ button {
   color: #fae9e7;
   font-size: 4rem;
 }
+
 .first-letter {
   color: #b99692;
 }
@@ -255,3 +264,238 @@ button {
   overflow: hidden;
   position: relative;
 }
+
+// ------------------------LET'S TALK SECTION------------------------
+form * {
+  padding: 0;
+  margin: 0;
+}
+
+form {
+  margin: auto;
+  max-width: 60%;
+  background-color: #fae9e7;
+  padding: 50px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form h2 {
+  text-align: center;
+  border-bottom: 1px solid;
+  font-weight: normal;
+}
+
+.formTitle {
+  font-weight: normal;
+  font-size: 25px;
+}
+
+.formInput {
+  width: 100%;
+  background-color: white;
+  padding: 10px 12px;
+  border: 1px solid #b99692;
+}
+
+form fieldset {
+  border: none;
+}
+
+.eventType {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+}
+
+.eventType legend {
+  margin-bottom: 10px;
+}
+
+.eventType label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.eventType input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.eventType input[type="radio"]:checked {
+  background-color: #e3b6b1;
+}
+
+.eventType input[type="radio"]:checked::after {
+  content: "\2713";
+  font-size: 14px;
+  color: white;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.notDecided {
+  display: flex;
+  gap: 10px;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #b99692;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #e3b6b1;
+  border-color: #e3b6b1;
+}
+
+input[type="checkbox"]:checked::after {
+  content: "\2713";
+  display: block;
+  font-size: 14px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+form .inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form .dateInputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dateInputs div {
+  flex-basis: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contactInputs {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contactInputs label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.contactInputs .radioText {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contactInputs label .formInput {
+  margin-top: 6px;
+}
+
+.contactInputs input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #b99692;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+.contactInputs input[type="radio"]:checked {
+  border-color: #b99692;
+}
+
+.contactInputs input[type="radio"]:checked::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 68%;
+  height: 68%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #b99692;
+}
+
+.contactInputs .formTitle {
+  margin-bottom: 20px;
+}
+
+.contactInputs .formInput {
+  display: none;
+}
+
+.submitBtn {
+  margin: auto;
+  max-width: 171px;
+  padding: 20px 32px;
+  background-color: #fae9e7;
+  font-family: "Baskervville", serif;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  border: 0.8px solid;
+  transition: all 150ms ease-out;
+}
+
+.submitBtn:hover {
+  background-color: #b99692;
+  color: white;
+  border: 0.8px solid #b99692;
+}
+// ------------------------LET'S TALK SECTION END------------------------
+
+// ------------------------LET'S TALK RESPONSIVENESS------------------------
+@media (max-width: 768px) {
+  form {
+    max-width: 100%;
+    padding: 50px 25px;
+  }
+  .inputContainer {
+    max-width: 90%;
+  }
+  .eventType {
+    flex-direction: column;
+  }
+  .dateInputs {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+// ------------------------LET'S TALK RESPONSIVENESS END------------------------

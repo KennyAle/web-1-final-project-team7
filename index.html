@@ -283,11 +283,144 @@
           services.
         </p>
       </div>
-      <div>
-        <form action=""></form>
-      </div>
+      <form id="contact-form" action="">
+        <h2 class="formTitle">Services</h2>
+        <div class="inputContainer">
+          <fieldset class="eventType">
+            <legend class="formTitle">Event Type</legend>
+            <label class="formInput">
+              Wedding
+              <input type="radio" name="event_type" value="wedding" />
+            </label>
+            <label class="formInput">
+              Party
+              <input type="radio" name="event_type" value="party" />
+            </label>
+            <label class="formInput">
+              Photoshoot
+              <input type="radio" name="event_type" value="photoshoot" />
+            </label>
+          </fieldset>
+          <fieldset class="dateInputs">
+            <div>
+              <label class="formTitle" for="event_date">Event Date</label>
+              <input class="formInput" type="date" name="event_date" id="event_date" />
+              <label class="notDecided" for="event_date_not_decided">
+                <input type="checkbox" name="event_date_not_decided" id="event_date_not_decided" />
+                Not decided
+              </label>
+            </div>
+            <div>
+              <label class="formTitle" for="event_time">Event Time</label>
+              <select class="formInput" name="event_time" id="event_time">
+                <option value="full_day">Full day</option>
+                <option value="one_hour">One hour</option>
+                <option value="two_hours">Two hours</option>
+              </select>
+              <label class="notDecided" for="event_time_not_decided">
+                <input type="checkbox" name="event_time_not_decided" id="event_time_not_decided" />
+                Not decided
+              </label>
+            </div>
+          </fieldset>
+          <label class="formTitle" for="name">
+            Name
+            <input class="formInput" type="text" name="name" id="name" placeholder="Your name" />
+          </label>
+          <fieldset class="contactInputs">
+            <legend class="formTitle">Contact</legend>
+            <label>
+              <div class="radioText">
+                <input type="radio" name="contact_type" id="contact_type_call" value="call" />
+                Call
+              </div>
+              <input
+                class="formInput"
+                type="text"
+                name="contact_detail_call"
+                id="contact_detail_call"
+                placeholder="Enter your phone number"
+              />
+            </label>
+            <label>
+              <div class="radioText">
+                <input
+                  type="radio"
+                  name="contact_type"
+                  id="contact_type_whatsapp"
+                  value="whatsapp"
+                />
+                WhatsApp
+              </div>
+              <input
+                class="formInput"
+                type="text"
+                name="contact_detail_whatsapp"
+                id="contact_detail_whatsapp"
+                placeholder="Enter your WhatsApp number"
+              />
+            </label>
+            <label>
+              <div class="radioText">
+                <input type="radio" name="contact_type" id="contact_type_sms" value="sms" />
+                SMS
+              </div>
+              <input
+                class="formInput"
+                type="text"
+                name="contact_detail_sms"
+                id="contact_detail_sms"
+                placeholder="Enter your SMS number"
+              />
+            </label>
+            <label>
+              <div class="radioText">
+                <input type="radio" name="contact_type" id="contact_type_email" value="email" />
+                Email
+              </div>
+              <input
+                class="formInput"
+                type="text"
+                name="contact_detail_email"
+                id="contact_detail_email"
+                placeholder="Enter your email address"
+              />
+            </label>
+          </fieldset>
+          <input class="submitBtn" type="submit" value="Submit" />
+        </div>
+      </form>
     </section>
 
     <script src="js/index.js"></script>
+
+    <!-------------------------EMAILJS SERVICE--------------------------->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "-ugdS--ZMbgBBOi7L",
+        });
+      })();
+    </script>
+    <script type="text/javascript">
+      window.onload = function () {
+        document.getElementById("contact-form").addEventListener("submit", function (event) {
+          event.preventDefault();
+          emailjs.sendForm("contact_service", "contact_form", this).then(
+            () => {
+              console.log("SUCCESS!");
+            },
+            (error) => {
+              console.log("FAILED...", error);
+            }
+          );
+        });
+      };
+    </script>
+    <!-------------------------EMAILJS SERVICE--------------------------->
   </body>
 </html>
