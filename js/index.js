@@ -25,4 +25,36 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   window.addEventListener("resize", updateTestimonials);
+
+
+  // Let's Talk Section 
+  function toggleDisabled(inputId, checkboxId) {
+    const inputElement = document.getElementById(inputId)
+    const checkboxElement = document.getElementById(checkboxId)
+
+    checkboxElement.addEventListener('change', function () {
+      inputElement.disabled = checkboxElement.checked
+    })
+  }
+
+  toggleDisabled('event_date', 'event_date_not_decided');
+  toggleDisabled('event_time', 'event_time_not_decided');
+
+
+  const radioBtn = document.querySelectorAll('.radioText input[type="radio"]')
+  const textInputs = document.querySelectorAll('.contactInputs .formInput')
+
+  function hideInputs() {
+    textInputs.forEach(input => input.style.display = 'none')
+  }
+
+  radioBtn.forEach(radio => {
+    radio.addEventListener('change', () => {
+      hideInputs()
+      const relatedInput = document.getElementById('contact_detail_' + radio.value)
+      if (relatedInput) {
+        relatedInput.style.display = 'block'
+      }
+    })
+  })
 });
