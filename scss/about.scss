@@ -252,6 +252,13 @@ body {
     color: var(--black);
     line-height: 18px;
     border: 0.8px solid var(--brand-color);
+    transition: all 150ms ease-out;
+}
+
+.service-content a:hover {
+    background-color: var(--dark-pink);
+    color: var(--pale-white);
+    border: 0.8px solid var(--dark-pink);
 }
 
 .brands {
