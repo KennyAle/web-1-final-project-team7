@@ -1,6 +1,5 @@
 body {
   position: relative;
-  font-family: "Baskervville", serif;
   display: flex;
   justify-content: center;
   flex-flow: column;
@@ -21,6 +20,7 @@ button {
   font-size: 20px;
 }
 .container {
+  font-family: "Baskervville", serif;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -95,6 +95,7 @@ button {
   align-items: center;
   font-size: 18px;
   text-align: center;
+  font-family: "Baskervville", serif;
 
   h1 {
     font-size: 80px;
@@ -233,6 +234,8 @@ button {
 .text-content {
   flex: 1;
   font-size: 2rem;
+  font-family: "Baskervville", serif;
+
   p {
     font-size: 1rem;
     width: 67%;
