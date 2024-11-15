@@ -13,20 +13,4 @@
             }
         }
     }
-
-    footer {
-        nav {
-            width: 90vw;
-
-            ul {
-                display: grid;
-                grid-template-rows: repeat(4, auto);
-                grid-auto-flow: column;
-                text-align: center;
-                gap: 26px;
-                min-height: 180px;
-            }
-        }
-    }
 }
-
