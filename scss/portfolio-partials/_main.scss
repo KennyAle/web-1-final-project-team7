@@ -15,7 +15,8 @@ main {
 
         h1 {
             margin: 0 auto;
-            font-size: 80px;
+            // font-size: 80px;
+            font-size: clamp(40px, 10vw, 80px);
             color: #725a58;
             letter-spacing: 13px;
             font-family: "Baskervville", serif;
