@@ -18,18 +18,15 @@ hairstyle.addEventListener("click", () => {
     })
 })
 
-const messageBtns = document.getElementById("message_btns")
+const messageBox = document.getElementById("message_box")
 const messageBoxBtn = document.getElementById("message_box_btn")
-const closeMessageBox = document.getElementById("close_message_box")
 
 messageBoxBtn.addEventListener("click", () => {
-    messageBtns.classList.add("appear")
-    messageBoxBtn.classList.add("disappear")
+    if (messageBox.classList.contains("appear")) {
+        messageBox.classList.remove("appear")
+        messageBoxBtn.classList.remove("disappear")
+    } else {
+        messageBox.classList.add("appear")
+        messageBoxBtn.classList.add("disappear")
+    }
 })
-
-closeMessageBox.addEventListener("click", () => {
-    console.log("Close button clicked")
-    messageBtns.classList.remove("appear")
-    messageBoxBtn.classList.remove("disappear")
-})
-

@@ -4,44 +4,70 @@ main {
     .message {
         position: relative;
 
-        .message_btns {
-            display: grid;
-            justify-content: flex-end;
+        .message_box {
             position: fixed;
             bottom: 50vh;
             right: 0;
             opacity: 0;
-
+            transition: all 0.4s ease;
+            
             &.appear {
                 opacity: 1;
+                transition: all 0.4s ease;
             }
 
-            .close_message_box {
-                cursor: pointer;
-                z-index: 100;
+            .message_box_icon {
+                width: 60px;
+                height: 60px;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
+
+            .red {
+                background-color: rgba($color: #c13ed4, $alpha: 0.8);
+            }
+
+            .green {
+                background-color: rgba($color: #6aa2ba, $alpha: 0.8);
             }
             
-            a {
-                display: inline-block;
-                
-                img {
-                    display: block;
-                }
+            .blue {
+                background-color: rgba($color: #25d366, $alpha: 0.8);
+            }
+
+            .black {
+                background-color: rgba($color: #191919, $alpha: 0.8);
             }
         }
 
         .message_box_btn {
-            position: relative;
-
-            .open {
-                cursor: pointer;
-                position: fixed;
-                bottom: 50vh;
-                right: 0;
-            }
+            background-color: rgba($color: #b99692, $alpha: 0.8);
+            position: fixed;
+            bottom: 50vh;
+            right: 0;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 1;
+            transition: all 0.4s ease;
 
             &.disappear {
                 opacity: 0;
+                transition: all 0.4s ease;
+            }
+
+            img {
+                max-width: 100%;
+                max-height: 100%;
             }
         }
     }
