@@ -158,6 +158,13 @@ main {
                     height: 100%;
                     object-fit: cover;
                     position: relative;
+                    opacity: 1;
+                    transition: all 0.4s ease;
+
+                    &.back {
+                        opacity: 0;
+                        transition: all 0.4s ease;
+                    }
                 }
 
                 .minilogo {
@@ -176,9 +183,11 @@ main {
                     top: 0;
                     left: 0;
                     opacity: 1;
+                    transition: all 0.4s ease;
 
                     &.back {
                         opacity: 0;
+                        transition: all 0.4s ease;
                     }
                 }
             }
