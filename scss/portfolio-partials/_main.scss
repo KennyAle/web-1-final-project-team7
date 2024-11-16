@@ -6,7 +6,7 @@ main {
 
     .message {
         position: relative;
-
+        z-index: 99;
         .message_box {
             position: fixed;
             bottom: 50vh;

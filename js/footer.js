@@ -6,3 +6,16 @@ allPages.forEach((page) => {
         page.classList.add("underline")
     }
 })
+
+const messageBox = document.getElementById("message_box")
+const messageBoxBtn = document.getElementById("message_box_btn")
+
+messageBoxBtn.addEventListener("click", () => {
+    if (messageBox.classList.contains("appear")) {
+        messageBox.classList.remove("appear")
+        messageBoxBtn.classList.remove("disappear")
+    } else {
+        messageBox.classList.add("appear")
+        messageBoxBtn.classList.add("disappear")
+    }
+})
