@@ -162,6 +162,10 @@ button {
     transition: transform 0.5s ease;
   }
 
+  #testimony-img {
+    max-height: 54px; /*Prevents Triggering Scroll Header*/
+  }
+
   .testimonial {
     flex: 0 0 100%;
     margin-right: 20px;
@@ -488,6 +492,40 @@ form .dateInputs {
   border: 0.8px solid #b99692;
 }
 // ------------------------LET'S TALK SECTION END------------------------
+
+// ------------------------STYLES------------------------
+.styles .image-container img {
+  transition: width 100ms ease-in-out;
+}
+.styles .image-container:nth-child(1) img{
+  width: 260px;
+}
+
+.styles .image-container:nth-child(1) img:hover{
+  width: 350px;
+}
+
+.styles .image-container:nth-child(2) img{
+  width: 350px;
+}
+
+.styles .image-container:nth-child(3) img{
+  width: 260px;
+}
+
+.styles .image-container:nth-child(3) img:hover{
+  width: 350px;
+}
+// ------------------------SLIDER ANIMATIONS------------------------
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
+}
 
 // ------------------------LET'S TALK RESPONSIVENESS------------------------
 @media (max-width: 768px) {
