@@ -80,7 +80,6 @@ main {
 
         h1 {
             margin: 0 auto;
-            // font-size: 80px;
             font-size: clamp(40px, 10vw, 80px);
             color: #725a58;
             letter-spacing: 13px;
@@ -92,10 +91,7 @@ main {
         .line {
             border: 1px solid #e3b6b1;
             width: 200px;
-            margin-top: 10px;
-            margin-right: auto;
-            margin-left: auto;
-            margin-bottom: 30px;
+            margin: 10px auto 30px auto;
         }
 
         p {
@@ -117,15 +113,13 @@ main {
         width: 100%;
     
         .btn_container {
+            margin-bottom: 30px;
             display: flex;
             justify-content: center;
-            margin-bottom: 50px;
 
             .btn {
                 background-color: transparent;
-                border-top: none;
-                border-left: none;
-                border-right: none;
+                border: none;
                 border-bottom: 1px solid black;
                 cursor: pointer;
                 font-size: max(2.22vw, 24px);
@@ -150,8 +144,7 @@ main {
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(3, 1fr);
             gap: 1vw;
-            place-content: center;
-            margin: 0 10vw;
+            margin: 0 11vw;
 
             .makeup_container {
                 position: relative;
@@ -196,9 +189,9 @@ main {
         }
         
         .vm_container {
+            margin-top: 70px;
             display: flex;
             justify-content: center;
-            margin-top: 70px;
 
             .vm_btn {
                 width: 161px;
