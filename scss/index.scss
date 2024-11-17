@@ -150,15 +150,23 @@ button {
 .works {
   background-color: #fae9e7;
 
-  #works {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .title {
+    button {
+      margin-bottom: 50px;
+    }
   }
 
-  #works img {
-    margin: 10px;
-    height: 350px;
+  #works {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      width: 23%;
+      height: 350px;
+      object-fit: cover;
+    }
   }
 
   #QuotationMark img {
@@ -302,6 +310,7 @@ button {
   align-items: center;
   padding: 1rem;
   transition: background-color 150ms ease-in;
+
   p {
     font-family: "Montserrat";
   }
@@ -439,7 +448,7 @@ form fieldset {
   transform: translate(-50%, -50%);
 }
 
-.eventType input[type="radio"]:checked ~ label {
+.eventType input[type="radio"]:checked~label {
   background-color: red;
   color: white;
   border-color: #e3b6b1;
@@ -709,6 +718,9 @@ form .dateInputs {
       h1 {
         width: 90%;
       }
+      button {
+        margin-bottom: 0;
+      }
     }
 
     #works {
@@ -767,6 +779,7 @@ form .dateInputs {
     flex-direction: column;
     align-items: center;
     background-color: #f8f6f4;
+
     .title {
       width: 90%;
 
@@ -799,6 +812,7 @@ form .dateInputs {
     .title {
       width: 90%;
       margin: 0 auto;
+
       h1 {
         margin: 2rem 0;
         font-size: 40px;
