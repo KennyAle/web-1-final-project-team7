@@ -702,6 +702,12 @@ form .dateInputs {
     flex-direction: column;
     gap: 30px;
 
+    .title {
+      h1 {
+        width: 90%;
+      }
+    }
+
     #works {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -711,9 +717,8 @@ form .dateInputs {
 
       img {
         width: 100%;
-        min-height: 400px;
+        height: 100%;
         margin: 0;
-        object-fit: cover;
       }
     }
   }
@@ -776,6 +781,13 @@ form .dateInputs {
       p {
         width: 100%;
       }
+    }
+  }
+
+  .title {
+    h1 {
+      font-size: 40px;
+      margin: 2rem 0;
     }
   }
 
