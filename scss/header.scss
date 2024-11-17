@@ -169,8 +169,14 @@ nav div ul li a:hover {
         display: none;
     }
 
+    .logo {
+        width: auto;
+    }
+    
     .logo a {
         gap: 0;
+        width: auto;
+        min-width: 95px;
     }
 
     .responsive-nav {
