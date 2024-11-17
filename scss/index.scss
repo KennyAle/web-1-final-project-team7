@@ -923,6 +923,25 @@ form .dateInputs {
       margin: 1rem 0.5rem;
     }
   }
+
+  // DIY Beauty Corner
+  .videos {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    white-space: nowrap;
+    justify-content: left;
+    margin: 1.5rem;
+  }
+
+  .videos iframe {
+    flex: 0 0 auto;
+    width: 90%;
+  }
+
+  .DIYBeautyCorner {
+    margin-bottom: 3rem;
+  }
 }
 
 // ------------------------LET'S TALK RESPONSIVENESS END------------------------
