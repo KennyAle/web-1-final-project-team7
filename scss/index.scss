@@ -651,9 +651,18 @@ form .dateInputs {
   }
 }
 
+#testimony {
+  min-height: 122px;
+}
 
 // ------------------------LET'S TALK RESPONSIVENESS------------------------
 @media (max-width: 768px) {
+    #testimony {
+      display: grid;
+      place-items: center;
+      min-height: 152px;
+    }
+
   .herobanner {
     justify-content: flex-end;
     height: 625px;

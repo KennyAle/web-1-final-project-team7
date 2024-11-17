@@ -89,7 +89,8 @@ nav div ul li a:hover {
 }
 
 .mobile-menu {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
     flex-direction: column;
     align-items: center;
     gap: 10px;
@@ -100,6 +101,11 @@ nav div ul li a:hover {
     top: 95px;
     left: 0;
     background-color: var(--pale-white);
+    transition: all 200ms ease-in-out;
+}
+.mobile-menu.active {
+    opacity: 1;
+    visibility: visible;
 }
 
 .mobile-links ul {
@@ -139,7 +145,8 @@ nav div ul li a:hover {
 
     // Responsive Navbar
     .active {
-        display: flex;
+        opacity: 1;
+        visibility: visible;
     }
 
     .margin-navbar {
