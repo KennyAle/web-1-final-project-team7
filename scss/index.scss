@@ -672,6 +672,11 @@ form .dateInputs {
 
 // ------------------------LET'S TALK RESPONSIVENESS------------------------
 @media (max-width: 768px) {
+  .logo {
+    width: auto;
+    fill: #a3a3a3;
+  }
+
   #testimony {
     display: grid;
     place-items: center;
@@ -754,16 +759,20 @@ form .dateInputs {
     flex-direction: column;
     align-items: center;
     background-color: #F8F6F4;
+
     .title {
       width: 90%;
+
       h1 {
         margin: 2rem 0;
         font-size: 30px;
       }
+
       hr {
         margin: 0;
         width: 50%;
       }
+
       p {
         width: 100%;
       }
@@ -831,6 +840,12 @@ form .dateInputs {
       padding: 20px;
       text-align: center;
       justify-content: center;
+    }
+  }
+
+  .title {
+    p {
+      width: 90%;
     }
   }
 
