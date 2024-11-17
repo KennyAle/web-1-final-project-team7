@@ -302,6 +302,9 @@ button {
   align-items: center;
   padding: 1rem;
   transition: background-color 150ms ease-in;
+  p {
+    font-family: "Montserrat";
+  }
 
   &:hover {
     background-color: rgba(227, 182, 177, 0.3);
@@ -436,7 +439,7 @@ form fieldset {
   transform: translate(-50%, -50%);
 }
 
-.eventType input[type="radio"]:checked~label {
+.eventType input[type="radio"]:checked ~ label {
   background-color: red;
   color: white;
   border-color: #e3b6b1;
@@ -753,7 +756,7 @@ form .dateInputs {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #F8F6F4;
+    background-color: #f8f6f4;
     .title {
       width: 90%;
       h1 {
@@ -772,6 +775,15 @@ form .dateInputs {
 
   .makeup101 {
     margin: 0;
+
+    .title {
+      width: 90%;
+      margin: 0 auto;
+      h1 {
+        margin: 2rem 0;
+        font-size: 40px;
+      }
+    }
 
     .container-101 {
       flex-direction: column;
@@ -859,7 +871,7 @@ form .dateInputs {
 
   // Professional Makeup & Hairstyle Artist
   .top {
-    background-color: #F8F6F4;
+    background-color: #f8f6f4;
   }
 
   .container {
