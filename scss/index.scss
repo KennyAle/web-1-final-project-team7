@@ -580,6 +580,44 @@ form .dateInputs {
   transition: opacity 0.3s ease-in;
 }
 
+// ------------------------HERO BANNER------------------------
+.herobanner {
+  background-image: url(../img/index/herobanner.png);
+  background-position: 50% -40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  box-shadow: inset 0 -170px 180px 0px rgba(0, 0, 0, 0.5);
+  div {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 46px;
+    max-width: 50%;
+    text-align: center;
+    margin-top: 190px;
+    margin-bottom: 100px;
+    img {
+      width: 100%;
+    }
+    a {
+      font-family: "Baskervville", serif;
+      color: white;
+      padding: 24px 32px;
+      border: 1px solid white;
+      transition: all 300ms ease-in-out;
+      &:hover {
+        background-color: rgb(255, 255, 255, 0.5);
+        border: 1px solid transparent;
+        color: black;
+      }
+    }
+  }
+}
+
+
 // ------------------------LET'S TALK RESPONSIVENESS------------------------
 @media (max-width: 768px) {
   .works {
