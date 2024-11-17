@@ -1,6 +1,5 @@
 body {
   position: relative;
-  font-family: "Baskervville", serif;
   display: flex;
   justify-content: center;
   flex-flow: column;
@@ -20,12 +19,15 @@ button {
   cursor: pointer;
   font-size: 20px;
 }
+
 .container {
+  font-family: "Baskervville", serif;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   align-items: center;
 }
+
 .image-container {
   position: relative;
 }
@@ -40,6 +42,7 @@ button {
   border: 1px solid #e3b6b1;
   z-index: -1000;
 }
+
 #top_information {
   width: 50%;
   padding-left: 50px;
@@ -48,6 +51,7 @@ button {
 .button-image-container {
   display: flex;
   align-items: center;
+
   button {
     margin-right: 10px;
     border: 1px solid #725a51;
@@ -56,10 +60,12 @@ button {
     color: #725a51;
     cursor: pointer;
   }
+
   img {
     margin-left: 40px;
   }
 }
+
 .line-with-text {
   position: relative;
   text-align: center;
@@ -95,20 +101,30 @@ button {
   align-items: center;
   font-size: 18px;
   text-align: center;
+  font-family: "Baskervville", serif;
 
   h1 {
     font-size: 80px;
     font-weight: 100;
     text-transform: uppercase;
-    margin-bottom: 2rem;
+    margin: 2rem;
     color: #5e4a49;
   }
+
+  h2 {
+    font-size: 48px;
+    font-weight: 100;
+    color: #5e4a49;
+    margin: 3rem 0;
+  }
+
   hr {
     border: none;
     width: 20%;
     border-top: 1px solid #e3b6b1;
     margin: 20px 0;
   }
+
   p {
     margin: 30px 200px;
     width: 437px;
@@ -144,13 +160,29 @@ button {
 
   #testimonials {
     display: flex;
+    justify-content: center;
     overflow: hidden;
     width: 100%;
     transition: transform 0.5s ease;
   }
 
+  .testimony-buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .testimony-img-container {
+    width: 136px;
+  }
+
+  #testimony-img {
+    max-height: 54px;
+    /*Prevents Triggering Scroll Header*/
+  }
+
   .testimonial {
-    flex: 0 0 100%;
+    width: 50%;
     margin-right: 20px;
     padding: 20px;
     text-align: center;
@@ -160,9 +192,21 @@ button {
   .arrow {
     background: none;
     border: none;
-    font-size: 1em;
+    font-size: 45px;
     cursor: pointer;
     z-index: 1;
+    opacity: 0.5;
+    transition: transform 500ms, background-color 200ms, opacity 200ms;
+
+    &:first-of-type:hover {
+      transform: translateX(-5px);
+      opacity: 1;
+    }
+
+    &:last-of-type:hover {
+      transform: translateX(5px);
+      opacity: 1;
+    }
   }
 }
 
@@ -184,13 +228,16 @@ button {
   height: auto;
   display: block;
 }
+
 .overlay-text {
   position: absolute;
   top: 70%;
   left: -15%;
   color: #fae9e7;
   font-size: 4rem;
+  font-family: "Baskervville", serif;
 }
+
 .first-letter {
   color: #b99692;
 }
@@ -215,21 +262,563 @@ button {
 
 .container-101 {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
+  align-items: flex-start;
+  gap: 50px;
   margin: 1rem 5rem 5rem;
-  img {
+
+  img:not(.teacher) {
     max-width: 33%;
     height: auto;
+  }
+
+  .teacher {
+    flex: 1;
+    min-width: 200px;
+  }
+}
+
+.DIYBeautyCorner {
+  margin-bottom: 10rem;
+}
+
+.beauty-class {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  transition: background-color 150ms ease-in;
+
+  &:hover {
+    background-color: rgba(227, 182, 177, 0.3);
+  }
+
+  a {
+    font-size: 40px;
+    opacity: 0.5;
+    cursor: pointer;
+
+    span {
+      display: none;
+    }
   }
 }
 
 .text-content {
+  display: flex;
+  flex-direction: column;
   flex: 1;
-  font-size: 2rem;
+  gap: 24px;
+  font-size: 1.5rem;
+  font-family: "Baskervville", serif;
+  color: #725a58;
+
   p {
     font-size: 1rem;
-    width: 67%;
+    width: 90%;
+  }
+
+  button {
+    max-width: 160px;
   }
 }
+
+.videos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 3rem;
+}
+
+.videos iframe {
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+// ------------------------LET'S TALK SECTION------------------------
+form * {
+  padding: 0;
+  margin: 0;
+}
+
+form {
+  font-family: "Baskervville", serif;
+  margin: auto;
+  max-width: 60%;
+  background-color: #fae9e7;
+  padding: 50px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form h2 {
+  text-align: center;
+  border-bottom: 1px solid;
+  font-weight: normal;
+}
+
+.formTitle {
+  font-family: "Baskervville", serif;
+  font-weight: normal;
+  font-size: 25px;
+}
+
+.formInput {
+  width: 100%;
+  background-color: white;
+  padding: 10px 12px;
+  border: 1px solid #b99692;
+}
+
+form fieldset {
+  border: none;
+}
+
+.eventType {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+}
+
+.eventType legend {
+  margin-bottom: 10px;
+}
+
+.eventType label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.eventType input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.eventType input[type="radio"]:checked {
+  background-color: #e3b6b1;
+}
+
+.eventType input[type="radio"]:checked::after {
+  content: "\2713";
+  font-size: 14px;
+  color: white;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.eventType input[type="radio"]:checked~label {
+  background-color: red;
+  color: white;
+  border-color: #e3b6b1;
+}
+
+.notDecided {
+  display: flex;
+  gap: 10px;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #b99692;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #e3b6b1;
+  border-color: #e3b6b1;
+}
+
+input[type="checkbox"]:checked::after {
+  content: "\2713";
+  display: block;
+  font-size: 14px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+form .inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form .dateInputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dateInputs div {
+  flex-basis: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contactInputs {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contactInputs label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.contactInputs .radioText {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contactInputs label .formInput {
+  margin-top: 6px;
+}
+
+.contactInputs input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #b99692;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+.contactInputs input[type="radio"]:checked {
+  border-color: #b99692;
+}
+
+.contactInputs input[type="radio"]:checked::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 68%;
+  height: 68%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #b99692;
+}
+
+.contactInputs .formTitle {
+  margin-bottom: 20px;
+}
+
+.contactInputs .formInput {
+  display: none;
+}
+
+.submitBtn {
+  margin: auto;
+  max-width: 171px;
+  padding: 20px 32px;
+  background-color: #fae9e7;
+  font-family: "Baskervville", serif;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  border: 0.8px solid;
+  cursor: pointer;
+  transition: all 150ms ease-out;
+}
+
+.submitBtn:hover {
+  background-color: #b99692;
+  color: white;
+  border: 0.8px solid #b99692;
+}
+
+.button-hover {
+  transition: all 150ms ease-out;
+}
+
+.button-hover:hover {
+  background-color: #b99692;
+  color: white;
+  border: 0.8px solid #b99692;
+}
+
+// ------------------------LET'S TALK SECTION END------------------------
+
+// ------------------------STYLES------------------------
+.styles .image-container img {
+  transition: width 100ms ease-in-out;
+}
+
+.styles .image-container:nth-child(1) img {
+  width: 260px;
+}
+
+.styles .image-container:nth-child(1) img:hover {
+  width: 350px;
+}
+
+.styles .image-container:nth-child(2) img {
+  width: 350px;
+}
+
+.styles .image-container:nth-child(3) img {
+  width: 260px;
+}
+
+.styles .image-container:nth-child(3) img:hover {
+  width: 350px;
+}
+
+// ------------------------SLIDER ANIMATIONS------------------------
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+.fade-in {
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
+}
+
+// ------------------------HERO BANNER------------------------
+.herobanner {
+  background-image: url(../img/index/herobanner.png);
+  background-position: 50% -40%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  box-shadow: inset 0 -170px 180px 0px rgba(0, 0, 0, 0.5);
+
+  div {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 46px;
+    max-width: 50%;
+    text-align: center;
+    margin-top: 190px;
+    margin-bottom: 100px;
+
+    img {
+      width: 100%;
+    }
+
+    a {
+      font-family: "Baskervville", serif;
+      color: white;
+      padding: 24px 32px;
+      border: 1px solid white;
+      transition: all 300ms ease-in-out;
+
+      &:hover {
+        background-color: rgb(255, 255, 255, 0.5);
+        border: 1px solid transparent;
+        color: black;
+      }
+    }
+  }
+}
+
+#testimony {
+  min-height: 122px;
+}
+
+// ------------------------LET'S TALK RESPONSIVENESS------------------------
+@media (max-width: 768px) {
+    #testimony {
+      display: grid;
+      place-items: center;
+      min-height: 152px;
+    }
+
+  .herobanner {
+    justify-content: flex-end;
+    height: 625px;
+
+    div {
+      gap: 20px;
+      max-width: 90%;
+
+      p {
+        line-height: 25px;
+      }
+    }
+  }
+
+  .works {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    #works {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      width: 90%;
+      margin: auto;
+
+      img {
+        width: 100%;
+        min-height: 400px;
+        margin: 0;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .styles {
+    gap: 30px;
+    max-width: 90%;
+    margin: 50px auto;
+    flex-direction: column;
+
+    .image-container {
+      width: 100%;
+
+      .overlay-text {
+        position: absolute;
+        font-size: 2rem;
+        top: auto;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, -50%);
+
+        .first-letter {
+          color: white;
+        }
+      }
+    }
+  }
+
+  .styles .image-container:nth-child(1) img {
+    width: 100%;
+  }
+
+  .styles .image-container:nth-child(2) img {
+    width: 100%;
+  }
+
+  .styles .image-container:nth-child(3) img {
+    width: 100%;
+  }
+
+  .makeup101 {
+    margin: 2rem 0;
+
+    .container-101 {
+      flex-direction: column;
+      margin: 0;
+
+      .teacher {
+        width: 100%;
+      }
+
+      .text-content {
+        width: 90%;
+        margin: auto;
+        font-size: 2rem;
+
+        button {
+          max-width: 100%;
+        }
+
+        .classes {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+      }
+    }
+  }
+
+  .beauty-class {
+    flex-direction: column;
+    gap: 10px;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      text-align: center;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      opacity: 1;
+
+      span {
+        display: block;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .works {
+    .testimonial {
+      width: 80%;
+      margin-right: 20px;
+      padding: 20px;
+      text-align: center;
+      justify-content: center;
+    }
+  }
+
+  form {
+    max-width: 100%;
+    padding: 50px 25px;
+  }
+
+  .inputContainer {
+    max-width: 100%;
+  }
+
+  .eventType {
+    flex-direction: column;
+  }
+
+  .dateInputs {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .submitBtn {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+// ------------------------LET'S TALK RESPONSIVENESS END------------------------
