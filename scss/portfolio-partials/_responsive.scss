@@ -5,7 +5,7 @@
 
     .portfolio_container {
         .photo_container {
-            grid-template-columns: repeat(auto-fit, minmax(288px, 319px)) !important;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)) !important;
             grid-template-rows: repeat(2, minmax(auto, 1fr)) !important;
 
             .minilogo {
