@@ -1,0 +1,81 @@
+footer {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+footer .footer_heading {
+  text-align: center;
+}
+footer .footer_heading .footer_logo {
+  width: 8.77vw;
+  min-width: 126px;
+}
+footer .footer_heading p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #191919;
+  margin-bottom: 24px;
+  margin-top: 10px;
+}
+footer .footer_heading .icons {
+  margin-bottom: 3vw;
+}
+footer .footer_heading .icons a:nth-child(2) {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+footer nav {
+  width: 84.31vw;
+  min-width: 288px;
+  border-top: 0.5px solid #191919;
+  border-bottom: 0.5px solid #191919;
+  margin: 0 auto;
+}
+footer nav ul {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  padding: 0;
+  flex-wrap: wrap;
+  width: 90%;
+  row-gap: 10px;
+  column-gap: 5.56vw;
+}
+footer nav ul li {
+  list-style: none;
+}
+footer nav ul li a {
+  text-decoration: none;
+  font-family: "Baskervville", serif;
+  color: #725a58;
+  font-size: 20px;
+  white-space: nowrap;
+}
+footer nav ul li a.underline {
+  text-decoration: underline #725a58 1px;
+  text-underline-offset: 2.5px;
+}
+footer .copyright {
+  margin-top: 30px;
+}
+footer .copyright p {
+  font-size: 14px;
+  text-align: center;
+  color: #725a58;
+}
+
+@media screen and (max-width: 768px) {
+  footer nav {
+    width: 90vw;
+  }
+  footer nav ul {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    grid-auto-flow: column;
+    justify-content: center;
+    text-align: center;
+    row-gap: 26px;
+    column-gap: 17vw;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */
