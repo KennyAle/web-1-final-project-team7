@@ -9,6 +9,7 @@ footer {
             width: 8.77vw;
             min-width: 126px;
         }
+
         p {
             font-family: "Montserrat", sans-serif;
             font-size: 14px;
@@ -36,17 +37,16 @@ footer {
 
         ul {
             display: flex;
-            justify-content: space-between;
-            margin-top: 26px;
-            margin-bottom: 26px;
-            margin-left: auto;
-            margin-right: auto;
+            justify-content: center;
+            margin: 20px auto;
             padding: 0;
-            padding-left: 7.71vw;
-            padding-right: 7.71vw;
+            flex-wrap: wrap;
+            width: 90%;
+            row-gap: 10px;
+            column-gap: 5.56vw;
 
             li {
-                list-style: none;   
+                list-style: none;
                 
                 a {
                     text-decoration: none;
@@ -85,9 +85,10 @@ footer {
                 display: grid;
                 grid-template-rows: repeat(4, auto);
                 grid-auto-flow: column;
+                justify-content: center;
                 text-align: center;
-                gap: 26px;
-                min-height: 180px;
+                row-gap: 26px;
+                column-gap: 17vw;
             }
         }
     }
