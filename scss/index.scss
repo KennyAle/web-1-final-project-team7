@@ -287,13 +287,16 @@ button {
   align-items: center;
   padding: 1rem;
   transition: background-color 150ms ease-in;
+
   &:hover {
     background-color: rgba(227, 182, 177, 0.3);
   }
+
   a {
     font-size: 40px;
     opacity: 0.5;
     cursor: pointer;
+
     span {
       display: none;
     }
@@ -616,6 +619,7 @@ form .dateInputs {
   align-items: center;
   position: relative;
   box-shadow: inset 0 -170px 180px 0px rgba(0, 0, 0, 0.5);
+
   div {
     color: white;
     display: flex;
@@ -626,15 +630,18 @@ form .dateInputs {
     text-align: center;
     margin-top: 190px;
     margin-bottom: 100px;
+
     img {
       width: 100%;
     }
+
     a {
       font-family: "Baskervville", serif;
       color: white;
       padding: 24px 32px;
       border: 1px solid white;
       transition: all 300ms ease-in-out;
+
       &:hover {
         background-color: rgb(255, 255, 255, 0.5);
         border: 1px solid transparent;
@@ -649,12 +656,34 @@ form .dateInputs {
 @media (max-width: 768px) {
   .herobanner {
     justify-content: flex-end;
-    height: 625px;    
+    height: 625px;
+
     div {
       gap: 20px;
       max-width: 90%;
+
       p {
         line-height: 25px;
+      }
+    }
+  }
+
+  .works {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    #works {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      width: 90%;
+      margin: auto;
+
+      img {
+        width: 100%;
+        min-height: 400px;
+        margin: 0;
+        object-fit: cover;
       }
     }
   }
@@ -664,15 +693,18 @@ form .dateInputs {
     max-width: 90%;
     margin: 50px auto;
     flex-direction: column;
+
     .image-container {
       width: 100%;
+
       .overlay-text {
         position: absolute;
         font-size: 2rem;
         top: auto;
         left: 50%;
         bottom: 0;
-        transform: translate(-50%,  -50%);
+        transform: translate(-50%, -50%);
+
         .first-letter {
           color: white;
         }
@@ -683,33 +715,40 @@ form .dateInputs {
   .styles .image-container:nth-child(1) img {
     width: 100%;
   }
+
   .styles .image-container:nth-child(2) img {
     width: 100%;
   }
+
   .styles .image-container:nth-child(3) img {
     width: 100%;
   }
 
   .makeup101 {
     margin: 2rem 0;
+
     .container-101 {
       flex-direction: column;
       margin: 0;
+
       .teacher {
         width: 100%;
       }
+
       .text-content {
         width: 90%;
         margin: auto;
         font-size: 2rem;
+
         button {
           max-width: 100%;
         }
+
         .classes {
           display: flex;
           flex-direction: column;
           gap: 10px;
-        } 
+        }
       }
     }
   }
@@ -717,6 +756,7 @@ form .dateInputs {
   .beauty-class {
     flex-direction: column;
     gap: 10px;
+
     div {
       display: flex;
       flex-direction: column;
@@ -724,11 +764,13 @@ form .dateInputs {
       gap: 10px;
       text-align: center;
     }
+
     a {
       display: flex;
       align-items: center;
       gap: 10px;
       opacity: 1;
+
       span {
         display: block;
         font-size: 20px;
