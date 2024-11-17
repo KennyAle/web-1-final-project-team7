@@ -1,0 +1,94 @@
+footer {
+    margin-top: 40px;
+    margin-bottom: 50px;
+
+    .footer_heading {
+        text-align: center;
+
+        .footer_logo {
+            width: 8.77vw;
+            min-width: 126px;
+        }
+        p {
+            font-family: "Montserrat", sans-serif;
+            font-size: 14px;
+            color: #191919;
+            margin-bottom: 24px;
+            margin-top: 10px;
+        }
+
+        .icons {
+            margin-bottom: 3vw;
+
+            a:nth-child(2) {
+                margin-left: 24px;
+                margin-right: 24px;
+            }
+        }
+    }
+
+    nav {
+        width: 84.31vw;
+        min-width: 288px;
+        border-top: 0.5px solid #191919;
+        border-bottom: 0.5px solid #191919;
+        margin: 0 auto;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 26px;
+            margin-bottom: 26px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0;
+            padding-left: 7.71vw;
+            padding-right: 7.71vw;
+
+            li {
+                list-style: none;   
+                
+                a {
+                    text-decoration: none;
+                    font-family: "Baskervville", serif;
+                    color: #725a58;
+                    font-size: 20px;
+                    white-space: nowrap;
+
+                    &.underline {
+                        text-decoration: underline #725a58 1px;
+                        text-underline-offset: 2.5px;
+                    }
+                }
+            }
+        }
+    }
+
+    .copyright {
+        margin-top: 30px;
+
+        p {
+            font-size: 14px;
+            text-align: center;
+            color: #725a58;
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        nav {
+            width: 90vw;
+    
+            ul {
+                display: grid;
+                grid-template-rows: repeat(4, auto);
+                grid-auto-flow: column;
+                text-align: center;
+                gap: 26px;
+                min-height: 180px;
+            }
+        }
+    }
+}
