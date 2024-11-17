@@ -584,6 +584,7 @@ form .dateInputs {
 .herobanner {
   background-image: url(../img/index/herobanner.png);
   background-position: 50% -40%;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -620,6 +621,17 @@ form .dateInputs {
 
 // ------------------------LET'S TALK RESPONSIVENESS------------------------
 @media (max-width: 768px) {
+  .herobanner {
+    justify-content: flex-end;
+    height: 625px;    
+    div {
+      gap: 20px;
+      max-width: 90%;
+      p {
+        line-height: 25px;
+      }
+    }
+  }
   .works {
     .testimonial {
       width: 80%;
