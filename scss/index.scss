@@ -46,11 +46,13 @@ button {
 #top_information {
   width: 50%;
   padding-left: 50px;
+
   h1 {
     font-size: 48px;
     font-weight: 400;
     margin: 1rem 0;
   }
+
   p {
     font-family: "Montserrat";
     font-weight: 200;
@@ -81,6 +83,7 @@ button {
   text-align: center;
   border-bottom: 1px solid #888888;
   margin: 20px 100px;
+
   span {
     color: #535353;
   }
@@ -134,7 +137,7 @@ button {
   hr {
     border: none;
     width: 20%;
-    border-top: 1px solid #e3b6b1;
+    border-top: 2px solid #e3b6b1;
     margin: 20px 0;
   }
 
@@ -207,7 +210,6 @@ button {
     border: none;
     font-size: 45px;
     cursor: pointer;
-    z-index: 1;
     opacity: 0.5;
     transition: transform 500ms, background-color 200ms, opacity 200ms;
 
@@ -434,7 +436,7 @@ form fieldset {
   transform: translate(-50%, -50%);
 }
 
-.eventType input[type="radio"]:checked ~ label {
+.eventType input[type="radio"]:checked~label {
   background-color: red;
   color: white;
   border-color: #e3b6b1;
@@ -694,6 +696,7 @@ form .dateInputs {
     display: flex;
     flex-direction: column;
     gap: 30px;
+
     #works {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -746,8 +749,29 @@ form .dateInputs {
     width: 100%;
   }
 
+  .makeup-hairstyle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F8F6F4;
+    .title {
+      width: 90%;
+      h1 {
+        margin: 2rem 0;
+        font-size: 30px;
+      }
+      hr {
+        margin: 0;
+        width: 50%;
+      }
+      p {
+        width: 100%;
+      }
+    }
+  }
+
   .makeup101 {
-    margin: 2rem 0;
+    margin: 0;
 
     .container-101 {
       flex-direction: column;
@@ -834,39 +858,51 @@ form .dateInputs {
   }
 
   // Professional Makeup & Hairstyle Artist
+  .top {
+    background-color: #F8F6F4;
+  }
+
   .container {
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
     margin: 1.5rem 0;
   }
+
   .button-image-container {
     flex-direction: column;
+
     img {
       order: 1;
       margin: 1rem 0;
       width: 70%;
     }
+
     button {
       order: 2;
     }
   }
+
   .image-container {
     order: 2;
   }
+
   #top_information {
     order: 1;
     padding: 0;
     width: 90%;
+
     img {
       justify-content: center;
       margin: 1rem;
     }
+
     h1 {
       font-size: 32px;
       text-align: center;
       margin: 0.5rem 0;
     }
+
     p {
       margin: 1rem 0;
       font-weight: 200;
@@ -878,8 +914,10 @@ form .dateInputs {
     width: 90%;
     text-align: center;
   }
+
   #logos {
     margin: 3rem;
+
     .logo {
       width: 40%;
       margin: 1rem 0.5rem;
