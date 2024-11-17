@@ -110,12 +110,14 @@ button {
     margin: 2rem;
     color: #5e4a49;
   }
+
   h2 {
     font-size: 48px;
     font-weight: 100;
     color: #5e4a49;
     margin: 3rem 0;
   }
+
   hr {
     border: none;
     width: 20%;
@@ -158,17 +160,29 @@ button {
 
   #testimonials {
     display: flex;
+    justify-content: center;
     overflow: hidden;
     width: 100%;
     transition: transform 0.5s ease;
   }
 
+  .testimony-buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .testimony-img-container {
+    width: 136px;
+  }
+
   #testimony-img {
-    max-height: 54px; /*Prevents Triggering Scroll Header*/
+    max-height: 54px;
+    /*Prevents Triggering Scroll Header*/
   }
 
   .testimonial {
-    flex: 0 0 100%;
+    width: 50%;
     margin-right: 20px;
     padding: 20px;
     text-align: center;
@@ -178,9 +192,21 @@ button {
   .arrow {
     background: none;
     border: none;
-    font-size: 1em;
+    font-size: 45px;
     cursor: pointer;
     z-index: 1;
+    opacity: 0.5;
+    transition: transform 500ms, background-color 200ms, opacity 200ms;
+
+    &:first-of-type:hover {
+      transform: translateX(-5px);
+      opacity: 1;
+    }
+
+    &:last-of-type:hover {
+      transform: translateX(5px);
+      opacity: 1;
+    }
   }
 }
 
@@ -239,6 +265,7 @@ button {
   align-items: center;
   gap: 20px;
   margin: 1rem 5rem 5rem;
+
   img {
     max-width: 33%;
     height: auto;
@@ -258,6 +285,7 @@ button {
   font-size: 1.5rem;
   font-family: "Baskervville", serif;
   color: #725a58;
+
   p {
     font-size: 1rem;
     width: 60%;
@@ -364,7 +392,7 @@ form fieldset {
   transform: translate(-50%, -50%);
 }
 
-.eventType input[type="radio"]:checked ~ label {
+.eventType input[type="radio"]:checked~label {
   background-color: red;
   color: white;
   border-color: #e3b6b1;
@@ -494,6 +522,7 @@ form .dateInputs {
   font-weight: 400;
   line-height: 18px;
   border: 0.8px solid;
+  cursor: pointer;
   transition: all 150ms ease-out;
 }
 
@@ -502,12 +531,24 @@ form .dateInputs {
   color: white;
   border: 0.8px solid #b99692;
 }
+
+.button-hover {
+  transition: all 150ms ease-out;
+}
+
+.button-hover:hover {
+  background-color: #b99692;
+  color: white;
+  border: 0.8px solid #b99692;
+}
+
 // ------------------------LET'S TALK SECTION END------------------------
 
 // ------------------------STYLES------------------------
 .styles .image-container img {
   transition: width 100ms ease-in-out;
 }
+
 .styles .image-container:nth-child(1) img {
   width: 260px;
 }
@@ -527,6 +568,7 @@ form .dateInputs {
 .styles .image-container:nth-child(3) img:hover {
   width: 350px;
 }
+
 // ------------------------SLIDER ANIMATIONS------------------------
 .fade-out {
   opacity: 0;
@@ -540,23 +582,38 @@ form .dateInputs {
 
 // ------------------------LET'S TALK RESPONSIVENESS------------------------
 @media (max-width: 768px) {
+  .works {
+    .testimonial {
+      width: 80%;
+      margin-right: 20px;
+      padding: 20px;
+      text-align: center;
+      justify-content: center;
+    }
+  }
+
   form {
     max-width: 100%;
     padding: 50px 25px;
   }
+
   .inputContainer {
     max-width: 100%;
   }
+
   .eventType {
     flex-direction: column;
   }
+
   .dateInputs {
     flex-direction: column;
     gap: 20px;
   }
+
   .submitBtn {
     width: 100%;
     max-width: 100%;
   }
 }
+
 // ------------------------LET'S TALK RESPONSIVENESS END------------------------

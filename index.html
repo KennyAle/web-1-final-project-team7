@@ -1,205 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/footer.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <script src="./js/header.js" defer></script>
-  </head>
-  <body>
-    <!---------------------------- HEADER START ---------------------------->
-    <header>
-      <nav class="nav" id="nav">
-        <div class="menu-left">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/footer.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <script src="./js/header.js" defer></script>
+</head>
+
+<body>
+  <!---------------------------- HEADER START ---------------------------->
+  <header>
+    <nav class="nav" id="nav">
+      <div class="menu-left">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <span class="separator">|</span>
+          <li><a href="portfolio.html">My Work</a></li>
+          <span class="separator">|</span>
+          <li><a href="services.html">Services</a></li>
+          <span class="separator">|</span>
+          <li><a href="#">Classes</a></li>
+        </ul>
+      </div>
+      <div class="logo">
+        <a href="index.html">
+          <img id="logo" src="./img/about/logo.png" alt="Carla Beauty Logo" />
+          <p id="logo-caption" class="logo-caption">Carla Beauty</p>
+        </a>
+      </div>
+      <div class="menu-right">
+        <ul>
+          <li><a href="#">Beauty Tips</a></li>
+          <span class="separator">|</span>
+          <li><a href="about.html">About</a></li>
+          <span class="separator">|</span>
+          <li><a href="#">Contact</a></li>
+          <span class="separator">|</span>
+          <li>
+            <a href="#"><img src="./img/about/instagram.svg" alt="Instagram  Profile" /></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <nav class="responsive-nav" id="nav">
+      <div class="menu-left">
+        <img id="burger-menu" src="./img/about/menu.svg" alt="Carla Beauty Logo" />
+      </div>
+      <div class="mobile-menu">
+        <div class="mobile-links">
           <ul>
             <li><a href="index.html">Home</a></li>
-            <span class="separator">|</span>
             <li><a href="portfolio.html">My Work</a></li>
-            <span class="separator">|</span>
             <li><a href="services.html">Services</a></li>
-            <span class="separator">|</span>
             <li><a href="#">Classes</a></li>
+            <li><a href="#">Beauty Tips</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </div>
-        <div class="logo">
-          <a href="index.html">
-            <img id="logo" src="./img/about/logo.png" alt="Carla Beauty Logo" />
-            <p id="logo-caption" class="logo-caption">Carla Beauty</p>
-          </a>
-        </div>
-        <div class="menu-right">
+        <div class="mobile-social">
           <ul>
-            <li><a href="#">Beauty Tips</a></li>
-            <span class="separator">|</span>
-            <li><a href="about.html">About</a></li>
-            <span class="separator">|</span>
-            <li><a href="#">Contact</a></li>
-            <span class="separator">|</span>
             <li>
-              <a href="#"><img src="./img/about/instagram.svg" alt="Instagram  Profile" /></a>
+              <a href="#"><img src="./img/about/phone.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/about/wpp.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/about/instagram.svg" alt="" /></a>
             </li>
           </ul>
+          <p class="mobile-caption">Expert Makeup and Hairstyle Studio</p>
         </div>
-      </nav>
-      <nav class="responsive-nav" id="nav">
-        <div class="menu-left">
-          <img id="burger-menu" src="./img/about/menu.svg" alt="Carla Beauty Logo" />
-        </div>
-        <div class="mobile-menu">
-          <div class="mobile-links">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="portfolio.html">My Work</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="#">Classes</a></li>
-              <li><a href="#">Beauty Tips</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </div>
-          <div class="mobile-social">
-            <ul>
-              <li>
-                <a href="#"><img src="./img/about/phone.svg" alt="" /></a>
-              </li>
-              <li>
-                <a href="#"><img src="./img/about/wpp.svg" alt="" /></a>
-              </li>
-              <li>
-                <a href="#"><img src="./img/about/instagram.svg" alt="" /></a>
-              </li>
-            </ul>
-            <p class="mobile-caption">Expert Makeup and Hairstyle Studio</p>
-          </div>
-        </div>
-        <div class="logo">
-          <a href="index.html">
-            <img id="logo" src="./img/about/logo.png" alt="Carla Beauty Logo" />
-            <p id="logo-caption" class="logo-caption">Carla Beauty</p>
-          </a>
-        </div>
-        <div class="menu-right">
-          <a href="#"><img src="./img/about/instagram.svg" alt="Instagram  Profile" /></a>
-        </div>
-      </nav>
-    </header>
-    <!---------------------------- HEADER END ---------------------------->
+      </div>
+      <div class="logo">
+        <a href="index.html">
+          <img id="logo" src="./img/about/logo.png" alt="Carla Beauty Logo" />
+          <p id="logo-caption" class="logo-caption">Carla Beauty</p>
+        </a>
+      </div>
+      <div class="menu-right">
+        <a href="#"><img src="./img/about/instagram.svg" alt="Instagram  Profile" /></a>
+      </div>
+    </nav>
+  </header>
+  <!---------------------------- HEADER END ---------------------------->
 
-    <section class="top margin-navbar">
-      <div>
-        <img src="img/index/top.png" alt="top" width="100%" />
+  <section class="top margin-navbar">
+    <div>
+      <img src="img/index/top.png" alt="top" width="100%" />
+    </div>
+    <div class="container">
+      <div class="image-container">
+        <img src="img/index/top_insta.png" alt="top_insta" width="100%" />
+        <div id="rectangle"></div>
       </div>
-      <div class="container">
-        <div class="image-container">
-          <img src="img/index/top_insta.png" alt="top_insta" width="100%" />
-          <div id="rectangle"></div>
-        </div>
-        <div id="top_information">
-          <img src="img/index/CBLogo_pink.png" alt="" />
-          <h1>Professional Makeup & Hairstyle Artist</h1>
-          <p>10+ years creating stunning looks for weddings and special occasions.</p>
-          <div class="button-image-container">
-            <button>About Me</button>
-            <img src="img/index/CarlaBeatriz.svg" alt="" />
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="line-with-text">
-          <span class="line-text">Our Brands</span>
-        </div>
-        <div id="logos">
-          <img src="img/index/MAC_logo.svg" alt="MAC_logo" class="logo" />
-          <img src="img/index/Lancôme_logo.svg" alt="Lancôme_logo" class="logo" />
-          <img src="img/index/inglot_logo.svg" alt="inglot_logo" class="logo" />
-          <img src="img/index/LauraMercier_logo.svg" alt="LauraMercier_logo" class="logo" />
-          <img src="img/index/CharlotteTilbury_logo.svg" alt="CharlotteTilbury_logo" class="logo" />
-          <img src="img/index/tarte_logo.svg" alt="tarte_logo" class="logo" />
-          <img src="img/index/ANASTASIA_logo.svg" alt="ANASTASIA_logo" class="logo" />
-          <img src="img/index/kryolan_logo.svg" alt="kryolan_logo" class="logo" />
+      <div id="top_information">
+        <img src="img/index/CBLogo_pink.png" alt="" />
+        <h1>Professional Makeup & Hairstyle Artist</h1>
+        <p>10+ years creating stunning looks for weddings and special occasions.</p>
+        <div class="button-image-container">
+          <button class="button-hover">About Me</button>
+          <img src="img/index/CarlaBeatriz.svg" alt="" />
         </div>
       </div>
-    </section>
-    <section class="works">
-      <div class="title">
-        <h1>You are a star</h1>
-        <hr />
-        <p>Shine effortlessly, embrace your unique features with absolute confidence.</p>
-        <button>My work</button>
+    </div>
+    <div>
+      <div class="line-with-text">
+        <span class="line-text">Our Brands</span>
       </div>
-      <div id="works">
-        <img src="img/index/work1.png" alt="work1" />
-        <img src="img/index/work2.png" alt="work2" />
-        <img src="img/index/work3.png" alt="work3" />
-        <img src="img/index/work4.png" alt="work4" />
+      <div id="logos">
+        <img src="img/index/MAC_logo.svg" alt="MAC_logo" class="logo" />
+        <img src="img/index/Lancôme_logo.svg" alt="Lancôme_logo" class="logo" />
+        <img src="img/index/inglot_logo.svg" alt="inglot_logo" class="logo" />
+        <img src="img/index/LauraMercier_logo.svg" alt="LauraMercier_logo" class="logo" />
+        <img src="img/index/CharlotteTilbury_logo.svg" alt="CharlotteTilbury_logo" class="logo" />
+        <img src="img/index/tarte_logo.svg" alt="tarte_logo" class="logo" />
+        <img src="img/index/ANASTASIA_logo.svg" alt="ANASTASIA_logo" class="logo" />
+        <img src="img/index/kryolan_logo.svg" alt="kryolan_logo" class="logo" />
       </div>
-      <div id="QuotationMark">
-        <img src="img/index/quotation.png" alt="" />
-      </div>
-      <div>
-        <div id="testimonials-container">
-          <div id="testimonials">
-            <div class="testimonial">
-              <p id="testimony">
-                Carla is the best! She made me the night's brightest star! She stayed with me the
-                whole wedding ensuring I always looked and felt wonderful!!
-              </p>
+    </div>
+  </section>
+  <section class="works">
+    <div class="title">
+      <h1>You are a star</h1>
+      <hr />
+      <p>Shine effortlessly, embrace your unique features with absolute confidence.</p>
+      <button class="button-hover">My work</button>
+    </div>
+    <div id="works">
+      <img src="img/index/work1.png" alt="work1" />
+      <img src="img/index/work2.png" alt="work2" />
+      <img src="img/index/work3.png" alt="work3" />
+      <img src="img/index/work4.png" alt="work4" />
+    </div>
+    <div>
+      <div id="testimonials-container">
+        <div id="testimonials">
+          <div class="testimonial">
+            <div id="QuotationMark">
+              <img src="img/index/quotation.png" alt="" />
+            </div>
+            <p id="testimony">
+              Carla is the best! She made me the night's brightest star! She stayed with me the
+              whole wedding ensuring I always looked and felt wonderful!!
+            </p>
+            <div class="testimony-buttons-container">
               <button id="prev" class="arrow">&lt;</button>
-              <img id="testimony-img" src="img/index/Janny.png" alt="" />
+              <div class="testimony-img-container">
+                <img id="testimony-img" src="img/index/Janny.png" alt="" />
+              </div>
               <button id="next" class="arrow">&gt;</button>
             </div>
+          </div>
         </div>
       </div>
-    </section>
+  </section>
 
-    <section class="makeup&hairstyle">
-      <div class="title">
-        <h1>Makeup & <br />hairstyle</h1>
-        <hr />
-        <p>We offer fully customizable plan to meet your unique requirements.</p>
-        <button>Get a Quote</button>
+  <section class="makeup&hairstyle">
+    <div class="title">
+      <h1>Makeup & <br />hairstyle</h1>
+      <hr />
+      <p>We offer fully customizable plan to meet your unique requirements.</p>
+      <button class="button-hover">Get a Quote</button>
+    </div>
+    <div class="styles">
+      <div class="image-container">
+        <img src="/img/index/Party.png" alt="" />
+        <div class="overlay-text"><span class="first-letter">P</span>arty</div>
       </div>
-      <div class="styles">
-        <div class="image-container">
-          <img src="/img/index/Party.png" alt="" />
-          <div class="overlay-text"><span class="first-letter">P</span>arty</div>
-        </div>
-        <div class="image-container">
-          <img src="/img/index/Wedding.png" alt="" />
-          <div id="rectangle2"></div>
-          <div class="overlay-text"><span class="first-letter">W</span>edding</div>
-        </div>
-        <div class="image-container">
-          <img src="/img/index/Photoshoot.png" alt="" />
-          <div class="overlay-text"><span class="first-letter">P</span>hotoshoot</div>
-        </div>
+      <div class="image-container">
+        <img src="/img/index/Wedding.png" alt="" />
+        <div id="rectangle2"></div>
+        <div class="overlay-text"><span class="first-letter">W</span>edding</div>
       </div>
-    </section>
-    <section class="makeup101">
-      <div class="title">
-        <h1>MAKE UP 101</h1>
+      <div class="image-container">
+        <img src="/img/index/Photoshoot.png" alt="" />
+        <div class="overlay-text"><span class="first-letter">P</span>hotoshoot</div>
       </div>
-      <div class="container-101">
-        <div class="text-content">
-          <div class="beauty-class">
-            <div>
+    </div>
+  </section>
+  <section class="makeup101">
+    <div class="title">
+      <h1>MAKE UP 101</h1>
+    </div>
+    <div class="container-101">
+      <div class="text-content">
+        <div class="beauty-class">
+          <div>
             <img src="img/index/cil_badge.png" alt="badge" width="30rem">
             1-on-1 Master Class
           </div>
@@ -207,239 +211,196 @@
             Customize your learning experience to excel in your chosen areas, all at your own pace.
           </p>
         </div>
-          <div class="beauty-class">
-            <div>
+        <div class="beauty-class">
+          <div>
             <img src="img/index/cil_badge.png" alt="badge" width="30rem">
-            Professional 1-day Workshop</div>
+            Professional 1-day Workshop
+          </div>
           <p>Discover popular and practical techniques to apply right away!</p>
         </div>
-          <div class="beauty-class">
-            <div>
+        <div class="beauty-class">
+          <div>
             <img src="img/index/cil_badge.png" alt="badge" width="30rem">
-            Self-Makeup Beginner Class</div>
+            Self-Makeup Beginner Class
+          </div>
           <p>
             Learn the basics, practice doing your own makeup and make new friends in the process!
           </p>
         </div>
-          <button>All Classes</button>
-        </div>
-        <img src="img/index/101_image.png" alt="" />
+        <button class="button-hover">All Classes</button>
       </div>
-    </section>
-    <section class="DIYBeautyCorner">
-      <div class="title">
-        <h2>DIY Beauty Corner</h2>
-      </div>
-      <div class="videos">
-        <iframe
-          width="250"
-          height="250"
-          src="https://www.youtube.com/embed/i-Crlp8I0EA?si=qA80V5n3dZH4XSXS"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-        <iframe
-          width="250"
-          height="250"
-          src="https://www.youtube.com/embed/9EgagwFwSNc?si=alqz3uQ4wyNoCeTG"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-        <iframe
-          width="250"
-          height="250"
-          src="https://www.youtube.com/embed/_aJwAOkEoQI?si=E4LHc1YKGSDWi6eD"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-      </div>
-        <div class="title">
-          <button>More Beauty Tips</button>
-        </div>
-    </section>
+      <img src="img/index/101_image.png" alt="" />
+    </div>
+  </section>
+  <section class="DIYBeautyCorner">
+    <div class="title">
+      <h2>DIY Beauty Corner</h2>
+    </div>
+    <div class="videos">
+      <iframe width="250" height="250" src="https://www.youtube.com/embed/i-Crlp8I0EA?si=qA80V5n3dZH4XSXS"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="250" height="250" src="https://www.youtube.com/embed/9EgagwFwSNc?si=alqz3uQ4wyNoCeTG"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="250" height="250" src="https://www.youtube.com/embed/_aJwAOkEoQI?si=E4LHc1YKGSDWi6eD"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="title">
+      <button class="button-hover">More Beauty Tips</button>
+    </div>
+  </section>
 
-    <section class="contactForm">
-      <div class="title">
-        <h1>Let's talk</h1>
-        <p>
-          Check availability, pricing, and schedule a meeting for your special day or our academy
-          services.
-        </p>
-      </div>
-      <form id="contact-form" action="">
-        <h2 class="formTitle">Services</h2>
-        <div class="inputContainer">
-          <fieldset class="eventType">
-            <legend class="formTitle">Event Type</legend>
-            <label class="formInput">
-              Wedding
-              <input type="radio" name="event_type" value="wedding" />
-            </label>
-            <label class="formInput">
-              Party
-              <input type="radio" name="event_type" value="party" />
-            </label>
-            <label class="formInput">
-              Photoshoot
-              <input type="radio" name="event_type" value="photoshoot" />
-            </label>
-          </fieldset>
-          <fieldset class="dateInputs">
-            <div>
-              <label class="formTitle" for="event_date">Event Date</label>
-              <input class="formInput" type="date" name="event_date" id="event_date" />
-              <label class="notDecided" for="event_date_not_decided">
-                <input type="checkbox" name="event_date_not_decided" id="event_date_not_decided" />
-                Not decided
-              </label>
-            </div>
-            <div>
-              <label class="formTitle" for="event_time">Event Time</label>
-              <select class="formInput" name="event_time" id="event_time">
-                <option value="full_day">Full day</option>
-                <option value="one_hour">One hour</option>
-                <option value="two_hours">Two hours</option>
-              </select>
-              <label class="notDecided" for="event_time_not_decided">
-                <input type="checkbox" name="event_time_not_decided" id="event_time_not_decided" />
-                Not decided
-              </label>
-            </div>
-          </fieldset>
-          <label class="formTitle" for="name">
-            Name
-            <input class="formInput" type="text" name="name" id="name" placeholder="Your name" />
+  <section class="contactForm">
+    <div class="title">
+      <h1>Let's talk</h1>
+      <p>
+        Check availability, pricing, and schedule a meeting for your special day or our academy
+        services.
+      </p>
+    </div>
+    <form id="contact-form" action="">
+      <h2 class="formTitle">Services</h2>
+      <div class="inputContainer">
+        <fieldset class="eventType">
+          <legend class="formTitle">Event Type</legend>
+          <label class="formInput">
+            Wedding
+            <input type="radio" name="event_type" value="wedding" />
           </label>
-          <fieldset class="contactInputs">
-            <legend class="formTitle">Contact</legend>
-            <label>
-              <div class="radioText">
-                <input type="radio" name="contact_type" id="contact_type_call" value="call" />
-                Call
-              </div>
-              <input
-                class="formInput"
-                type="text"
-                name="contact_detail_call"
-                id="contact_detail_call"
-                placeholder="Enter your phone number"
-              />
+          <label class="formInput">
+            Party
+            <input type="radio" name="event_type" value="party" />
+          </label>
+          <label class="formInput">
+            Photoshoot
+            <input type="radio" name="event_type" value="photoshoot" />
+          </label>
+        </fieldset>
+        <fieldset class="dateInputs">
+          <div>
+            <label class="formTitle" for="event_date">Event Date</label>
+            <input class="formInput" type="date" name="event_date" id="event_date" />
+            <label class="notDecided" for="event_date_not_decided">
+              <input type="checkbox" name="event_date_not_decided" id="event_date_not_decided" />
+              Not decided
             </label>
-            <label>
-              <div class="radioText">
-                <input
-                  type="radio"
-                  name="contact_type"
-                  id="contact_type_whatsapp"
-                  value="whatsapp"
-                />
-                WhatsApp
-              </div>
-              <input
-                class="formInput"
-                type="text"
-                name="contact_detail_whatsapp"
-                id="contact_detail_whatsapp"
-                placeholder="Enter your WhatsApp number"
-              />
-            </label>
-            <label>
-              <div class="radioText">
-                <input type="radio" name="contact_type" id="contact_type_sms" value="sms" />
-                SMS
-              </div>
-              <input
-                class="formInput"
-                type="text"
-                name="contact_detail_sms"
-                id="contact_detail_sms"
-                placeholder="Enter your SMS number"
-              />
-            </label>
-            <label>
-              <div class="radioText">
-                <input type="radio" name="contact_type" id="contact_type_email" value="email" />
-                Email
-              </div>
-              <input
-                class="formInput"
-                type="text"
-                name="contact_detail_email"
-                id="contact_detail_email"
-                placeholder="Enter your email address"
-              />
-            </label>
-          </fieldset>
-          <input class="submitBtn" type="submit" value="Submit" />
-        </div>
-      </form>
-    </section>
-
-    <script src="js/index.js"></script>
-
-    <!-------------------------EMAILJS SERVICE--------------------------->
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init({
-          publicKey: "-ugdS--ZMbgBBOi7L",
-        });
-      })();
-    </script>
-    <script type="text/javascript">
-      window.onload = function () {
-        document.getElementById("contact-form").addEventListener("submit", function (event) {
-          event.preventDefault();
-          emailjs.sendForm("contact_service", "contact_form", this).then(
-            () => {
-              console.log("SUCCESS!");
-            },
-            (error) => {
-              console.log("FAILED...", error);
-            }
-          );
-        });
-      };
-    </script>
-    <!-------------------------EMAILJS SERVICE--------------------------->
-
-    <footer>
-      <div class="footer_heading">
-          <a href="./index.html"><img src="./img/portfolio/logo.svg" alt="image of logo" class="footer_logo"></a>
-          <p>Expert Makeup and Hairstyle Studio</p>
-          <div class="icons">
-              <a href="#"><img src="./img/portfolio/phone-icon.svg" alt="phone icon"></a>
-              <a href="#"><img src="./img/portfolio/whatsapp-icon.svg" alt="whatsapp icon"></a>
-              <a href="#"><img src="./img/portfolio/instagram.svg" alt="instagram icon"></a>
           </div>
+          <div>
+            <label class="formTitle" for="event_time">Event Time</label>
+            <select class="formInput" name="event_time" id="event_time">
+              <option value="full_day">Full day</option>
+              <option value="one_hour">One hour</option>
+              <option value="two_hours">Two hours</option>
+            </select>
+            <label class="notDecided" for="event_time_not_decided">
+              <input type="checkbox" name="event_time_not_decided" id="event_time_not_decided" />
+              Not decided
+            </label>
+          </div>
+        </fieldset>
+        <label class="formTitle" for="name">
+          Name
+          <input class="formInput" type="text" name="name" id="name" placeholder="Your name" />
+        </label>
+        <fieldset class="contactInputs">
+          <legend class="formTitle">Contact</legend>
+          <label>
+            <div class="radioText">
+              <input type="radio" name="contact_type" id="contact_type_call" value="call" />
+              Call
+            </div>
+            <input class="formInput" type="text" name="contact_detail_call" id="contact_detail_call"
+              placeholder="Enter your phone number" />
+          </label>
+          <label>
+            <div class="radioText">
+              <input type="radio" name="contact_type" id="contact_type_whatsapp" value="whatsapp" />
+              WhatsApp
+            </div>
+            <input class="formInput" type="text" name="contact_detail_whatsapp" id="contact_detail_whatsapp"
+              placeholder="Enter your WhatsApp number" />
+          </label>
+          <label>
+            <div class="radioText">
+              <input type="radio" name="contact_type" id="contact_type_sms" value="sms" />
+              SMS
+            </div>
+            <input class="formInput" type="text" name="contact_detail_sms" id="contact_detail_sms"
+              placeholder="Enter your SMS number" />
+          </label>
+          <label>
+            <div class="radioText">
+              <input type="radio" name="contact_type" id="contact_type_email" value="email" />
+              Email
+            </div>
+            <input class="formInput" type="text" name="contact_detail_email" id="contact_detail_email"
+              placeholder="Enter your email address" />
+          </label>
+        </fieldset>
+        <input class="submitBtn" type="submit" value="Submit" />
       </div>
-      <nav>
-          <ul>
-              <li><a href="/web-1-final-project-team7/index.html" class="footer_link">Home</a></li>
-              <li><a href="/web-1-final-project-team7/portfolio.html" class="footer_link">My Work</a></li>
-              <li><a href="/web-1-final-project-team7/services.html" class="footer_link">Services</a></li>
-              <li><a href="#" class="footer_link">Classes</a></li>
-              <li><a href="#" class="footer_link">Beauty Tips</a></li>
-              <li><a href="/web-1-final-project-team7/about.html" class="footer_link">About</a></li>
-              <li><a href="#" class="footer_link">Contact</a></li>
-          </ul>
-      </nav>
-      <div class="copyright">
-          <p>Copyright 2024, Carla Beauty</p>
+    </form>
+  </section>
+
+  <script src="js/index.js"></script>
+
+  <!-------------------------EMAILJS SERVICE--------------------------->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init({
+        publicKey: "-ugdS--ZMbgBBOi7L",
+      });
+    })();
+  </script>
+  <script type="text/javascript">
+    window.onload = function () {
+      document.getElementById("contact-form").addEventListener("submit", function (event) {
+        event.preventDefault();
+        emailjs.sendForm("contact_service", "contact_form", this).then(
+          () => {
+            console.log("SUCCESS!");
+          },
+          (error) => {
+            console.log("FAILED...", error);
+          }
+        );
+      });
+    };
+  </script>
+  <!-------------------------EMAILJS SERVICE--------------------------->
+
+  <footer>
+    <div class="footer_heading">
+      <a href="./index.html"><img src="./img/portfolio/logo.svg" alt="image of logo" class="footer_logo"></a>
+      <p>Expert Makeup and Hairstyle Studio</p>
+      <div class="icons">
+        <a href="#"><img src="./img/portfolio/phone-icon.svg" alt="phone icon"></a>
+        <a href="#"><img src="./img/portfolio/whatsapp-icon.svg" alt="whatsapp icon"></a>
+        <a href="#"><img src="./img/portfolio/instagram.svg" alt="instagram icon"></a>
       </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/web-1-final-project-team7/index.html" class="footer_link">Home</a></li>
+        <li><a href="/web-1-final-project-team7/portfolio.html" class="footer_link">My Work</a></li>
+        <li><a href="/web-1-final-project-team7/services.html" class="footer_link">Services</a></li>
+        <li><a href="#" class="footer_link">Classes</a></li>
+        <li><a href="#" class="footer_link">Beauty Tips</a></li>
+        <li><a href="/web-1-final-project-team7/about.html" class="footer_link">About</a></li>
+        <li><a href="#" class="footer_link">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="copyright">
+      <p>Copyright 2024, Carla Beauty</p>
+    </div>
   </footer>
   <script src="./js/footer.js"></script>
-  </body>
+</body>
+
 </html>
