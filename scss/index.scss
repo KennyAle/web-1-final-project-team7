@@ -235,6 +235,7 @@ button {
   left: -15%;
   color: #fae9e7;
   font-size: 4rem;
+  font-family: "Baskervville", serif;
 }
 
 .first-letter {
@@ -656,6 +657,37 @@ form .dateInputs {
         line-height: 25px;
       }
     }
+  }
+
+  .styles {
+    gap: 30px;
+    max-width: 90%;
+    margin: 50px auto;
+    flex-direction: column;
+    .image-container {
+      width: 100%;
+      .overlay-text {
+        position: absolute;
+        font-size: 2rem;
+        top: auto;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%,  -50%);
+        .first-letter {
+          color: white;
+        }
+      }
+    }
+  }
+
+  .styles .image-container:nth-child(1) img {
+    width: 100%;
+  }
+  .styles .image-container:nth-child(2) img {
+    width: 100%;
+  }
+  .styles .image-container:nth-child(3) img {
+    width: 100%;
   }
 
   .makeup101 {
