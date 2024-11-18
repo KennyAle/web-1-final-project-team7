@@ -362,6 +362,45 @@ button {
   border-radius: 15px;
   overflow: hidden;
   position: relative;
+  margin: 10px;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 700px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 // ------------------------LET'S TALK SECTION------------------------
@@ -448,7 +487,7 @@ form fieldset {
   transform: translate(-50%, -50%);
 }
 
-.eventType input[type="radio"]:checked ~ label {
+.eventType input[type="radio"]:checked~label {
   background-color: red;
   color: white;
   border-color: #e3b6b1;
@@ -733,6 +772,7 @@ form .dateInputs {
       h1 {
         width: 90%;
       }
+
       button {
         margin-bottom: 0;
       }
@@ -995,15 +1035,29 @@ form .dateInputs {
   .videos {
     display: flex;
     flex-wrap: nowrap;
-    overflow-x: scroll;
-    white-space: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
     justify-content: left;
-    margin: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 
-  .videos iframe {
-    flex: 0 0 auto;
-    width: 90%;
+  .videoArea {
+    flex: 0 0 80%;
+    scroll-snap-align: start;
+
+    iframe {
+      pointer-events: auto;
+      width: 100%;
+    }
   }
 
   .DIYBeautyCorner {

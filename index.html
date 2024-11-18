@@ -268,18 +268,30 @@
       <h2>DIY Beauty Corner</h2>
     </div>
     <div class="videos">
-      <iframe width="250" height="250" src="https://www.youtube.com/embed/i-Crlp8I0EA?si=qA80V5n3dZH4XSXS"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <iframe width="250" height="250" src="https://www.youtube.com/embed/9EgagwFwSNc?si=alqz3uQ4wyNoCeTG"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <iframe width="250" height="250" src="https://www.youtube.com/embed/_aJwAOkEoQI?si=E4LHc1YKGSDWi6eD"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div onclick="onClickVideo(this)" class="videoArea">
+        <iframe width="250" height="250" src="https://www.youtube.com/embed/i-Crlp8I0EA?si=qA80V5n3dZH4XSXS"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div onclick="onClickVideo(this)" class="videoArea">
+        <iframe width="250" height="250" src="https://www.youtube.com/embed/9EgagwFwSNc?si=alqz3uQ4wyNoCeTG"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div onclick="onClickVideo(this)" class="videoArea">
+        <iframe width="250" height="250" src="https://www.youtube.com/embed/_aJwAOkEoQI?si=E4LHc1YKGSDWi6eD"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div id="videoModal" class="modal" onclick="onCloseModalByOutside(this,event)">
+      <div class="modal-content">
+        <span class="close" onclick="onCloseModal()">&times;</span>
+        <iframe id="modalVideo" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+      </div>
     </div>
     <div class="title">
       <button class="button-hover">More Beauty Tips</button>
