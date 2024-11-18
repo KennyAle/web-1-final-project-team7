@@ -92,7 +92,7 @@ button {
 .line-text {
   position: relative;
   display: inline-block;
-  background: white;
+  background: var(--pale-white);
   padding: 0 10px;
   top: 0.5em;
 }
@@ -448,7 +448,7 @@ form fieldset {
   transform: translate(-50%, -50%);
 }
 
-.eventType input[type="radio"]:checked~label {
+.eventType input[type="radio"]:checked ~ label {
   background-color: red;
   color: white;
   border-color: #e3b6b1;
