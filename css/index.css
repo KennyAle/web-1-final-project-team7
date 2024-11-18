@@ -88,7 +88,7 @@ button {
 .line-text {
   position: relative;
   display: inline-block;
-  background: white;
+  background: var(--pale-white);
   padding: 0 10px;
   top: 0.5em;
 }
@@ -600,6 +600,14 @@ form .dateInputs {
   transition: opacity 0.3s ease-in;
 }
 
+.margin-navbar .message .message_box_btn {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.message {
+  display: block;
+}
+
 .herobanner {
   background-image: url(../img/index/herobanner.png);
   background-position: 50% -40%;
@@ -610,7 +618,7 @@ form .dateInputs {
   position: relative;
   box-shadow: inset 0 -170px 180px 0px rgba(0, 0, 0, 0.5);
 }
-.herobanner div {
+.herobanner .herotext {
   color: white;
   display: flex;
   flex-direction: column;
@@ -621,17 +629,17 @@ form .dateInputs {
   margin-top: 190px;
   margin-bottom: 100px;
 }
-.herobanner div img {
+.herobanner .herotext img {
   width: 100%;
 }
-.herobanner div a {
+.herobanner .herotext a {
   font-family: "Baskervville", serif;
   color: white;
   padding: 24px 32px;
   border: 1px solid white;
   transition: all 300ms ease-in-out;
 }
-.herobanner div a:hover {
+.herobanner .herotext a:hover {
   background-color: rgba(255, 255, 255, 0.5);
   border: 1px solid transparent;
   color: black;
@@ -650,6 +658,12 @@ form .dateInputs {
     display: grid;
     place-items: center;
     min-height: 152px;
+  }
+  .margin-navbar .message .message_box_btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 40px;
+    height: 40px;
+    padding: 5px;
   }
   .herobanner {
     justify-content: flex-end;

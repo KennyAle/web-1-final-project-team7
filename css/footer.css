@@ -50,10 +50,6 @@ footer nav ul li a {
   font-size: 20px;
   white-space: nowrap;
 }
-footer nav ul li a.underline {
-  text-decoration: underline #725a58 1px;
-  text-underline-offset: 2.5px;
-}
 footer .copyright {
   margin-top: 30px;
 }
