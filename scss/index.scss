@@ -644,6 +644,8 @@ form .dateInputs {
   display: block;
 }
 .herobanner {
+  max-width: 1440px;
+  margin-inline: auto;
   background-image: url(../img/index/herobanner.png);
   background-position: 50% -40%;
   background-repeat: no-repeat;
