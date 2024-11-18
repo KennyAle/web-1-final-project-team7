@@ -9,7 +9,7 @@ main {
         z-index: 99;
         .message_box {
             position: fixed;
-            bottom: 50vh;
+            bottom: 30vh;
             right: 0;
             opacity: 0;
             transition: all 0.4s ease;
@@ -53,7 +53,7 @@ main {
         .message_box_btn {
             background-color: rgba($color: #b99692, $alpha: 0.8);
             position: fixed;
-            bottom: 50vh;
+            bottom: 30vh;
             right: 0;
             width: 60px;
             height: 60px;

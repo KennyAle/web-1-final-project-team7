@@ -637,6 +637,12 @@ form .dateInputs {
 }
 
 // ------------------------HERO BANNER------------------------
+.margin-navbar .message .message_box_btn {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.message {
+  display: block;
+}
 .herobanner {
   background-image: url(../img/index/herobanner.png);
   background-position: 50% -40%;
@@ -647,7 +653,7 @@ form .dateInputs {
   position: relative;
   box-shadow: inset 0 -170px 180px 0px rgba(0, 0, 0, 0.5);
 
-  div {
+  .herotext {
     color: white;
     display: flex;
     flex-direction: column;
@@ -693,6 +699,13 @@ form .dateInputs {
     display: grid;
     place-items: center;
     min-height: 152px;
+  }
+  
+  .margin-navbar .message .message_box_btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 40px;
+    height: 40px;
+    padding: 5px;
   }
 
   .herobanner {
