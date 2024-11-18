@@ -366,6 +366,7 @@ button {
   cursor: pointer;
   pointer-events: none;
 }
+
 .modal {
   display: none;
   position: fixed;
@@ -486,7 +487,7 @@ form fieldset {
   transform: translate(-50%, -50%);
 }
 
-.eventType input[type="radio"]:checked ~ label {
+.eventType input[type="radio"]:checked~label {
   background-color: red;
   color: white;
   border-color: #e3b6b1;
@@ -769,6 +770,7 @@ form .dateInputs {
       h1 {
         width: 90%;
       }
+
       button {
         margin-bottom: 0;
       }
@@ -1031,14 +1033,25 @@ form .dateInputs {
   .videos {
     display: flex;
     flex-wrap: nowrap;
-    overflow-x: scroll;
-    white-space: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
     justify-content: left;
-    margin: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 
   .videoArea {
-    flex: 0 0 auto;
+    flex: 0 0 80%;
+    scroll-snap-align: start;
+
     iframe {
       pointer-events: auto;
       width: 100%;
